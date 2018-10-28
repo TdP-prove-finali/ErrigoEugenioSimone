@@ -21,7 +21,7 @@ public class HNYController {
 
     @FXML
     private ResourceBundle resources;
-
+    	
     @FXML
     private URL location;
 
@@ -55,16 +55,19 @@ public class HNYController {
 			Provider prov = comboProvider.getValue();
 			Borough boro = comboBorough.getValue();
 			double failure = sldFailure.getValue();
+			boolean allIsSelected = checkAllBorough.isSelected();
 			
-			if(prov==null)
+			if(prov==null)                                                             //modificare controllo di errore
 				txtResult.appendText("Choose a value in Provider box.\n");
 			else if(!checkAllBorough.isSelected() && boro==null) 
 				txtResult.appendText("Choose a value in Borough box.\n");
 			else if(maxDist<500)
-				txtResult.appendText("Insert a value greater than 500.\n");               //?
+				txtResult.appendText("Insert a value greater than 500.\n");            
 			else {
-				model.createGraph(prov, boro, maxDist, failure);
-				txtResult.appendText("Grafo creato correttamente.\n");
+				model.createGraph(prov, boro, maxDist, failure, allIsSelected);
+				txtResult.appendText("Graph correctly created.\n");
+				txtResult.appendText("Connected graph: "+ model.checkRoutes());
+				model.schedule();
 			}
 			
 		} catch (NumberFormatException e) {
@@ -95,9 +98,11 @@ public class HNYController {
     	checkAllBorough.setOnAction(e -> {
     		if(checkAllBorough.isSelected())
     			comboBorough.setDisable(true);
+    		else
+    			comboBorough.setDisable(false);
     	});
     	
-    	//se deseleziono checkbox, devo abilitare combo
+
     }
     
     

@@ -50,7 +50,7 @@ public class HotspotDAO {
 	 * Metodo per caricare tutti i dati relativi ai distretti 
 	 * @return List of Borough
 	 */
-	public List<Borough> getAllBoroughs() {
+	public List<Borough> getAllBoroughs(BoroughIdMap bmap) {
 		
 		List<Borough> result = new ArrayList<Borough>();
 		
@@ -72,7 +72,7 @@ public class HotspotDAO {
 				}
 				
 				if(flag==false)
-					result.add(new Borough(sigla, rs.getString("BoroName"), rs.getInt("BoroCode")));
+					result.add(bmap.get(new Borough(sigla, rs.getString("BoroName"), rs.getInt("BoroCode"))));
 				
 			}
 

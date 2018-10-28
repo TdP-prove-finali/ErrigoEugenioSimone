@@ -138,7 +138,12 @@ public class Hotspot {
 			return false;
 		return true;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "Hotspot [SSID=" + SSID +", borough=" + borough + ", type=" + type + ", provider=" + provider + ", location=" + location
+				+ ", street=" + street + ", city=" + city + ", remark=" + remark + "]";
+	}
 	
 	
 

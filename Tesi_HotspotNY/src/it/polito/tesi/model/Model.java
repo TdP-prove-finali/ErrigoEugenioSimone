@@ -102,7 +102,7 @@ public class Model {
 	}
 
 	/**
-	 * Utility method per ottenere una lista di dimensione random (data percentuale)
+	 * Utility method per ottenere una lista di dimensione random di hotspot (vertici) guasti
 	 * @param allVertex
 	 * @param failure
 	 * @return
@@ -141,18 +141,24 @@ public class Model {
 		ConnectivityInspector<Hotspot, DefaultWeightedEdge> c = new ConnectivityInspector<>(graph);
 		List<Set<Hotspot>> listcompconn = c.connectedSets();                                            //lista che contiene le componenti connesse,che contengono un insieme di hotspot
 		
+		if(listcompconn.size()!=0) {
 //		for(Set<Hotspot> compconn : listcompconn) {                    //per ogni componente connessa, mi calcolo un TSP
 //			//this.bestRoute(compconn);
 //			System.out.println("---Nuovo TSP---\n");
 //			TSP tsp = new TSP(compconn, graph);
+//			System.out.println(compconn.toString());
 //			tsp.solve();
 //			tsp.printSolution();
 //		}
-		TSP tsp = new TSP(listcompconn.get(0), graph);    //TEST sulla prima componente
-		System.out.println(listcompconn.get(0).toString());
-		tsp.solve();
-		tsp.printSolution();
+			TSP tsp = new TSP(listcompconn.get(0), graph);    //TEST sulla prima componente
+			System.out.println(listcompconn.get(0).toString());
+			tsp.solve();
+			tsp.printSolution();
 
+		}else
+		System.err.println("Impossibile calcolare TSP perchè componenti connesse = 0.");
+	
+		
 	}
 	
 

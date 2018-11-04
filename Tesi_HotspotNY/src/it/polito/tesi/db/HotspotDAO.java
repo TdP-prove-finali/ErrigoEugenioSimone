@@ -97,7 +97,7 @@ public class HotspotDAO {
 		
 		List<Hotspot> result = new ArrayList<>();
 		
-		String sql = "SELECT * FROM nyc_wifi_hotspot_locations WHERE Borough = ? AND Provider = ? ORDER BY OBJECTID ";
+		String sql = "SELECT DISTINCT * FROM nyc_wifi_hotspot_locations WHERE Borough = ? AND Provider = ? ORDER BY OBJECTID ";
 	
 		try {
 			Connection conn = ConnectDB.getConnection();

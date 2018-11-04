@@ -117,11 +117,17 @@ public class Hotspot {
 		SSID = sSID;
 	}
 
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + id;
+		long temp;
+		temp = Double.doubleToLongBits(latitude);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		temp = Double.doubleToLongBits(longitude);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
 		return result;
 	}
 
@@ -136,12 +142,16 @@ public class Hotspot {
 		Hotspot other = (Hotspot) obj;
 		if (id != other.id)
 			return false;
+		if (Double.doubleToLongBits(latitude) != Double.doubleToLongBits(other.latitude))
+			return false;
+		if (Double.doubleToLongBits(longitude) != Double.doubleToLongBits(other.longitude))
+			return false;
 		return true;
 	}
 
 	@Override
 	public String toString() {
-		return "Hotspot [SSID=" + SSID +", borough=" + borough + ", type=" + type + ", provider=" + provider + ", location=" + location
+		return "Hotspot [ID=" + id +", SSID=" + SSID +", borough=" + borough + ", type=" + type + ", provider=" + provider + ", location=" + location
 				+ ", street=" + street + ", city=" + city + ", remark=" + remark + "]";
 	}
 	

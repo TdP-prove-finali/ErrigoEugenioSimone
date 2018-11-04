@@ -35,18 +35,19 @@ public class TSP {
 	
 	/**
 	 * Funzione ricorsiva: prova tutte le possibili liste di hotspots e sceglie la migliore
+	 * 
 	 * @param parziale
 	 * @param step
 	 */
 	private void explore(List<Hotspot> parziale, int step) {
 		
-		if(step>=10) {                                                               //?
-			if(weightOf(parziale) < bestWeight && weightOf(parziale)!=0) {
+		if(step>=compconn.size()) {                                                               
+			if(weightOf(parziale) < bestWeight) {
 				best = new ArrayList<>(parziale);
 				bestWeight = weightOf(best);
 				
 				System.out.println(bestWeight + best.toString());
-				return;
+				//return;
 			}
 		}
 		
@@ -59,7 +60,7 @@ public class TSP {
 			if(!parziale.contains(h) && compconn.contains(h)) {
 				parziale.add(h);
 				this.explore(parziale, step+1);
-				parziale.remove(parziale.size()-1);
+				parziale.remove(h);
 			}
 		}
 		
@@ -73,6 +74,16 @@ public class TSP {
 	private double weightOf(List<Hotspot> parziale) {
 		double peso = 0.0;
 		
+		//Controllo che la soluzione candidata non sia vuota o nulla
+		if(parziale.isEmpty() || parziale == null)
+			return Double.MAX_VALUE;
+		
+		//Controllo che la soluzione candidata abbia tutti gli hotspots della componente connessa
+		for(Hotspot h : compconn) {
+			if(!parziale.contains(h))
+				return Double.MAX_VALUE;
+		}
+		
 		for(int i=0; i< parziale.size()-1; i++) {
 			DefaultWeightedEdge e = graph.getEdge(parziale.get(i), parziale.get(i+1));
 			System.out.println(graph.getEdgeWeight(e));
@@ -84,11 +95,15 @@ public class TSP {
 	}
 
 
+	/**
+	 * Ottiene la soluzione del TSP
+	 */
 	public void printSolution() {
 		System.out.println("+++SOLUZIONE+++");
 		for(Hotspot h: best) {
 			System.out.println("+ "+ h.toString());
 		}
+		System.out.println("\nBest weight: "+bestWeight+"\n");
 	}
 	
 	

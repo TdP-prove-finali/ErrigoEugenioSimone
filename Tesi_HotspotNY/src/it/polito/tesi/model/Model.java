@@ -5,8 +5,10 @@ import java.util.List;
 import java.util.Set;
 
 import org.jgrapht.Graph;
+import org.jgrapht.GraphPath;
 import org.jgrapht.Graphs;
 import org.jgrapht.alg.ConnectivityInspector;
+import org.jgrapht.alg.tour.TwoApproxMetricTSP;
 import org.jgrapht.graph.DefaultWeightedEdge;
 import org.jgrapht.graph.SimpleWeightedGraph;
 
@@ -21,6 +23,8 @@ public class Model {
 	private HotspotDAO dao;
 	private Graph<Hotspot, DefaultWeightedEdge> graph;
 	private BoroughIdMap bmap;
+	
+	private int maxDist;
 	
 	public Model() {
 		dao = new HotspotDAO();
@@ -59,7 +63,8 @@ public class Model {
 	public void createGraph(Provider provider, Borough borough, int maxDist, double failure, boolean allIsSelected) {
 		
 		graph = new SimpleWeightedGraph<Hotspot, DefaultWeightedEdge>(DefaultWeightedEdge.class);
-		
+		//this.maxDist = maxDist;
+	
 		List<Hotspot> allVertex = new ArrayList<>();
 		
 		if(!allIsSelected)
@@ -122,43 +127,71 @@ public class Model {
 	}
 
 	/**
-	 * Controlli sulla connessione del grafo
+	 * Componenti connesse del grafo
 	 */
-	public boolean checkRoutes() {
+	public List<Set<Hotspot>> getCC() {
 		
 		ConnectivityInspector<Hotspot, DefaultWeightedEdge> c = new ConnectivityInspector<>(graph);
 		System.out.println("Tot componenti connesse: "+c.connectedSets().size());     
 		
-		return c.isGraphConnected();
+		return c.connectedSets();
 	}
 	
 	
 	/**
-	 * Per ogni componente connessa, calcola un TSP
+	 * Eseguo la schedulazione su singola componente connessa attraverso l'algoritmo TSP
+	 * @param compconn 
 	 */
-	public void schedule() {
+	public List<Hotspot> schedule(Set<Hotspot> compconn) {
 		
-		ConnectivityInspector<Hotspot, DefaultWeightedEdge> c = new ConnectivityInspector<>(graph);
-		List<Set<Hotspot>> listcompconn = c.connectedSets();                                            //lista che contiene le componenti connesse,che contengono un insieme di hotspot
-		
-		if(listcompconn.size()!=0) {
-//		for(Set<Hotspot> compconn : listcompconn) {                    //per ogni componente connessa, mi calcolo un TSP
-//			//this.bestRoute(compconn);
-//			System.out.println("---Nuovo TSP---\n");
-//			TSP tsp = new TSP(compconn, graph);
-//			System.out.println(compconn.toString());
+			System.out.println("---Nuovo TSP---\n");
+			TSP tsp = new TSP(compconn, graph);
+			System.out.println(compconn.toString());
+			tsp.solve();
+		return tsp.printSolution();
+			
+//			TSP tsp = new TSP(listcompconn.get(0), graph);              //TEST sulla prima componente
+//			System.out.println(listcompconn.get(0).toString());
 //			tsp.solve();
 //			tsp.printSolution();
+			
+//			Graph<Hotspot, DefaultWeightedEdge> grafosuCC = new SimpleWeightedGraph<>(DefaultWeightedEdge.class);
+//			Graphs.addAllVertices(grafosuCC, compconn);
+//			for(Hotspot h1 : grafosuCC.vertexSet()) {
+//				for(Hotspot h2 : grafosuCC.vertexSet()) {
+//					if(!h1.equals(h2)) {
+//						double distance = this.calculateDistance(h1, h2);
+//						//System.out.println(distance+"\n");
+//						if(distance <= maxDist) {
+//							Graphs.addEdge(graph, h1, h2, distance);
+//							//System.out.println("Aggiunto: "+distance+"\n");
+//						}
+//					}
+//				}
+//			}
+//			TwoApproxMetricTSP<Hotspot, DefaultWeightedEdge> tsp = new TwoApproxMetricTSP<>();
+//			GraphPath<Hotspot, DefaultWeightedEdge> gp = tsp.getTour(graph);
+//			List<Hotspot> path = gp.getVertexList();
+//			
+//			for(Hotspot h : path)
+//				System.out.println(h.toString());
 //		}
-			TSP tsp = new TSP(listcompconn.get(0), graph);    //TEST sulla prima componente
-			System.out.println(listcompconn.get(0).toString());
-			tsp.solve();
-			tsp.printSolution();
-
-		}else
-		System.err.println("Impossibile calcolare TSP perchè componenti connesse = 0.");
 	
 		
+	}
+	
+	
+	//Calcolo il TSP con una classe Java
+	public void TSPwithJClass() {
+		
+		TwoApproxMetricTSP<Hotspot, DefaultWeightedEdge> tsp = new TwoApproxMetricTSP<>();
+		
+		GraphPath<Hotspot, DefaultWeightedEdge> gp = tsp.getTour(graph);
+		
+		List<Hotspot> path = gp.getVertexList();
+		
+		for(Hotspot h : path)
+			System.out.println(h.toString());
 	}
 	
 

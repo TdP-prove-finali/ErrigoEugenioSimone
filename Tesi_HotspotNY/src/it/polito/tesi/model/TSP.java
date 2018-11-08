@@ -34,7 +34,7 @@ public class TSP {
 	}
 	
 	/**
-	 * Funzione ricorsiva: prova tutte le possibili liste di hotspots e sceglie la migliore
+	 * Funzione ricorsiva: prova tutti i possibili insiemi di hotspots e sceglie il migliore
 	 * 
 	 * @param parziale
 	 * @param step
@@ -98,12 +98,14 @@ public class TSP {
 	/**
 	 * Ottiene la soluzione del TSP
 	 */
-	public void printSolution() {
+	public List<Hotspot> printSolution() {
 		System.out.println("+++SOLUZIONE+++");
 		for(Hotspot h: best) {
 			System.out.println("+ "+ h.toString());
 		}
 		System.out.println("\nBest weight: "+bestWeight+"\n");
+		
+		return best;
 	}
 	
 	

@@ -1,6 +1,7 @@
 package it.polito.tesi;
 
 import java.net.URL;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.ResourceBundle;
 import java.util.Set;
@@ -44,6 +45,9 @@ public class HNYController {
     private CheckBox checkAllBorough;
     
     @FXML
+    private CheckBox checkApproximate;
+    
+    @FXML
     private Button btnResearch;
 
     @FXML
@@ -62,6 +66,7 @@ public class HNYController {
 			Borough boro = comboBorough.getValue();
 			double failure = sldFailure.getValue();
 			boolean allIsSelected = checkAllBorough.isSelected();
+			boolean approximate = checkApproximate.isSelected();
 			
 			if(prov==null) {                   
 				err = true;
@@ -84,17 +89,22 @@ public class HNYController {
 				
 				if(model.getCC().size()!=0) {
 					txtResult.appendText("Connected components: "+ model.getCC().size()+"\n");
-				
+					
 					for(Set<Hotspot> compconn : model.getCC()) {
 						StringBuilder s = new StringBuilder();
 						
-						List<Hotspot> tsp = model.schedule(compconn);
+						List<Hotspot> tsp = new LinkedList<>();
+						if(!approximate) 
+							 tsp = model.schedule(compconn);
+						else 
+							tsp = model.TSPwithJClass(compconn);						
+						
 						txtResult.appendText("---TSP---\n");
 						
 						for(Hotspot h: tsp)
 							s.append(h.toString()+"\n");
 						
-						txtResult.appendText(s.toString());				
+						txtResult.appendText(s.toString());
 					}
 				
 				}else {
@@ -119,6 +129,7 @@ public class HNYController {
         assert comboBorough != null : "fx:id=\"comboBorough\" was not injected: check your FXML file 'HotspotNY.fxml'.";
         assert btnResearch != null : "fx:id=\"btnResearch\" was not injected: check your FXML file 'HotspotNY.fxml'.";
         assert checkAllBorough != null : "fx:id=\"checkAllBorough\" was not injected: check your FXML file 'HotspotNY.fxml'.";
+        assert checkApproximate != null : "fx:id=\"checkApproximate\" was not injected: check your FXML file 'HotspotNY.fxml'.";
         assert txtResult != null : "fx:id=\"txtResult\" was not injected: check your FXML file 'HotspotNY.fxml'.";
 
     }
@@ -137,6 +148,7 @@ public class HNYController {
     			comboBorough.setDisable(false);
     	});
     	
+    	checkApproximate.setSelected(true);
 
     }
     

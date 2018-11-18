@@ -9,6 +9,7 @@ import org.jgrapht.GraphPath;
 import org.jgrapht.Graphs;
 import org.jgrapht.alg.ConnectivityInspector;
 import org.jgrapht.alg.tour.TwoApproxMetricTSP;
+import org.jgrapht.graph.AsSubgraph;
 import org.jgrapht.graph.DefaultWeightedEdge;
 import org.jgrapht.graph.SimpleWeightedGraph;
 
@@ -154,44 +155,26 @@ public class Model {
 //			System.out.println(listcompconn.get(0).toString());
 //			tsp.solve();
 //			tsp.printSolution();
-			
-//			Graph<Hotspot, DefaultWeightedEdge> grafosuCC = new SimpleWeightedGraph<>(DefaultWeightedEdge.class);
-//			Graphs.addAllVertices(grafosuCC, compconn);
-//			for(Hotspot h1 : grafosuCC.vertexSet()) {
-//				for(Hotspot h2 : grafosuCC.vertexSet()) {
-//					if(!h1.equals(h2)) {
-//						double distance = this.calculateDistance(h1, h2);
-//						//System.out.println(distance+"\n");
-//						if(distance <= maxDist) {
-//							Graphs.addEdge(graph, h1, h2, distance);
-//							//System.out.println("Aggiunto: "+distance+"\n");
-//						}
-//					}
-//				}
-//			}
-//			TwoApproxMetricTSP<Hotspot, DefaultWeightedEdge> tsp = new TwoApproxMetricTSP<>();
-//			GraphPath<Hotspot, DefaultWeightedEdge> gp = tsp.getTour(graph);
-//			List<Hotspot> path = gp.getVertexList();
-//			
-//			for(Hotspot h : path)
-//				System.out.println(h.toString());
-//		}
-	
 		
 	}
 	
 	
 	//Calcolo il TSP con una classe Java
-	public void TSPwithJClass() {
+	public List<Hotspot> TSPwithJClass(Set<Hotspot> compconn) {
 		
-		TwoApproxMetricTSP<Hotspot, DefaultWeightedEdge> tsp = new TwoApproxMetricTSP<>();
+		Graph<Hotspot, DefaultWeightedEdge> subgraph = new AsSubgraph<Hotspot, DefaultWeightedEdge>(graph, compconn);
 		
-		GraphPath<Hotspot, DefaultWeightedEdge> gp = tsp.getTour(graph);
+		System.out.println(String.format("--Sottografo-- Vertici: %d, Archi:%d" , subgraph.vertexSet().size(), subgraph.edgeSet().size()));
+		
+		TwoApproxMetricTSP<Hotspot, DefaultWeightedEdge> tsp = new TwoApproxMetricTSP<>();          //il grafo deve essere completo!!
+		GraphPath<Hotspot, DefaultWeightedEdge> gp = tsp.getTour(subgraph);            //su sottografo
 		
 		List<Hotspot> path = gp.getVertexList();
 		
 		for(Hotspot h : path)
 			System.out.println(h.toString());
+		
+		return path;
 	}
 	
 

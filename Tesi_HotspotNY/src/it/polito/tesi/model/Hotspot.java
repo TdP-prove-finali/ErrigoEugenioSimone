@@ -149,12 +149,18 @@ public class Hotspot {
 		return true;
 	}
 
+	public String print() {
+		if(remark!=null)
+			return "location: " +location + " - " + street + " -SSID: " +SSID +" (" + type + ") - Info: " + remark;
+		else
+			return "location: " +location + " - " + street + " -SSID: " +SSID +" (" + type + ")";
+	}
+	
 	@Override
 	public String toString() {
 		return "Hotspot [ID=" + id +", SSID=" + SSID +", borough=" + borough + ", type=" + type + ", provider=" + provider + ", location=" + location
 				+ ", street=" + street + ", city=" + city + ", remark=" + remark + "]";
 	}
-	
 	
 
 }

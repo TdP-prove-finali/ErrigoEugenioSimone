@@ -29,84 +29,109 @@
          </font>
       </Label>
    </top>
-   <center>
+   <left>
       <VBox BorderPane.alignment="CENTER">
          <children>
-            <HBox spacing="5.0">
+            <GridPane hgap="5.0" maxWidth="-Infinity" vgap="10.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
                <children>
-                  <GridPane maxWidth="-Infinity" prefWidth="372.0" vgap="10.0">
-                    <columnConstraints>
-                      <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" />
-                      <ColumnConstraints hgrow="SOMETIMES" />
-                    </columnConstraints>
-                    <rowConstraints>
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                    </rowConstraints>
-                     <children>
-                        <ComboBox fx:id="comboProvider" promptText="Choose a provider..." GridPane.columnIndex="1" />
-                        <Label text="Provider">
-                           <padding>
-                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                           </padding>
-                        </Label>
-                        <Label text="Borough" GridPane.rowIndex="1">
-                           <padding>
-                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                           </padding>
-                        </Label>
-                        <Label text="Max. distance (mt)" GridPane.rowIndex="2">
-                           <padding>
-                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                           </padding>
-                        </Label>
-                        <TextField fx:id="txtDistance" maxWidth="-Infinity" promptText="Max distance of workman" GridPane.columnIndex="1" GridPane.rowIndex="2">
-                           <padding>
-                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                           </padding>
-                        </TextField>
-                        <Label text="Failure rate (%)" GridPane.rowIndex="3">
-                           <padding>
-                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                           </padding>
-                        </Label>
-                        <Slider fx:id="sldFailure" blockIncrement="0.01" majorTickUnit="0.5" max="1.0" maxWidth="-Infinity" showTickLabels="true" showTickMarks="true" value="0.5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                        <ComboBox fx:id="comboBorough" promptText="Choose a borough..." GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Button fx:id="btnResearch" mnemonicParsing="false" onAction="#doSchedule" text="Research" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                        <CheckBox fx:id="checkAllBorough" mnemonicParsing="false" text="All" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
-                           <padding>
-                              <Insets right="10.0" />
-                           </padding>
-                        </CheckBox>
-                        <CheckBox fx:id="checkApproximate" mnemonicParsing="false" text="Approximate?" underline="true" GridPane.rowIndex="4">
-                           <GridPane.margin>
-                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                           </GridPane.margin>
-                        </CheckBox>
-                     </children>
-                  </GridPane>
-                  <ImageView disable="true" fitHeight="222.0" fitWidth="206.0" pickOnBounds="true">
-                     <image>
-                        <Image url="@../../../../../../../Desktop/Eugi/Tesi/NYC%20WiFi%20Hotspot%20Locations/Wifi-map.png" />
-                     </image>
+                  <ComboBox fx:id="comboProvider" promptText="Choose a provider..." GridPane.columnIndex="1" />
+                  <Label text="Provider">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label text="Borough" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Label text="Max. distance (mt)" GridPane.rowIndex="2">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="txtDistance" maxWidth="-Infinity" promptText="Max distance of workman" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </TextField>
+                  <Label text="Failure rate (%)" GridPane.rowIndex="3">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Slider fx:id="sldFailure" blockIncrement="0.01" majorTickUnit="0.5" max="1.0" maxWidth="-Infinity" showTickLabels="true" showTickMarks="true" value="0.5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <ComboBox fx:id="comboBorough" promptText="Choose a borough..." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="checkAllBorough" mnemonicParsing="false" text="All" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </CheckBox>
+               </children>
+            </GridPane>
+            <HBox alignment="TOP_CENTER">
+               <children>
+                  <CheckBox fx:id="checkApproximate" mnemonicParsing="false" text="Approximate?">
                      <HBox.margin>
-                        <Insets right="5.0" />
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </HBox.margin>
-                  </ImageView>
+                  </CheckBox>
                </children>
             </HBox>
-            <TextArea fx:id="txtResult" editable="false" promptText="Press Research">
-               <VBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
-               </VBox.margin>
-            </TextArea>
+            <HBox alignment="TOP_RIGHT">
+               <children>
+                  <Button fx:id="btnResearch" mnemonicParsing="false" onAction="#doSchedule" text="Research">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
          </children>
          <BorderPane.margin>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </BorderPane.margin>
+      </VBox>
+   </left>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="TOP_RIGHT">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../Desktop/Eugi/Tesi/NYC%20WiFi%20Hotspot%20Locations/wifi-logo.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <TextArea fx:id="txtResult" editable="false" promptText="Press Research" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
       </VBox>
    </center>
 </BorderPane>

@@ -8,21 +8,21 @@ import org.jgrapht.Graph;
 import org.jgrapht.Graphs;
 import org.jgrapht.graph.DefaultWeightedEdge;
 
-public class TSP {
-	
-	private Graph<Hotspot, DefaultWeightedEdge> graph;
-	private List<Hotspot> compconn;
+public class TSP extends TSPAlgorithm{
+
 	private List<Hotspot> best;
 	private double bestWeight;
+	private List<Hotspot> compconn;
 	
-	public TSP(Set<Hotspot> compconn, Graph<Hotspot, DefaultWeightedEdge> graph) {
-		this.graph = graph;
-		this.compconn = new ArrayList<Hotspot>(compconn);
+	public TSP(Graph<Hotspot, DefaultWeightedEdge> graph, Set<Hotspot> compconn) {
+		super(graph, compconn);
+		this.compconn = new ArrayList<>(compconn);
 	}
 	
 	/**
 	 * Calcola la sequenza ottimale di hotspot da riparare che minimizza la distanza da percorrere, utilizzando la ricorsione
 	 */
+	@Override
 	public void solve() {
 		
 		best = new ArrayList<Hotspot>();
@@ -98,7 +98,8 @@ public class TSP {
 	/**
 	 * Ottiene la soluzione del TSP
 	 */
-	public List<Hotspot> printSolution() {
+	@Override
+	public List<Hotspot> getSolution() {
 		System.out.println("+++SOLUZIONE+++");
 		for(Hotspot h: best) {
 			System.out.println("+ "+ h.toString());

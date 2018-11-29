@@ -97,12 +97,12 @@ public class HNYController {
 						if(!approximate) 
 							 tsp = model.schedule(compconn);
 						else 
-							tsp = model.TSPwithJClass(compconn);						
+							tsp = model.TSPApprox(compconn);						
 						
 						txtResult.appendText("---TSP---\n");
 						
 						for(Hotspot h: tsp)
-							s.append(h.toString()+"\n");
+							s.append(h.print()+"\n");
 						
 						txtResult.appendText(s.toString());
 					}

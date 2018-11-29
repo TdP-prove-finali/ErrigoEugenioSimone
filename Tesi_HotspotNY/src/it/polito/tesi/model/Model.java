@@ -5,10 +5,8 @@ import java.util.List;
 import java.util.Set;
 
 import org.jgrapht.Graph;
-import org.jgrapht.GraphPath;
 import org.jgrapht.Graphs;
 import org.jgrapht.alg.ConnectivityInspector;
-import org.jgrapht.alg.tour.TwoApproxMetricTSP;
 import org.jgrapht.graph.AsSubgraph;
 import org.jgrapht.graph.DefaultWeightedEdge;
 import org.jgrapht.graph.SimpleWeightedGraph;
@@ -141,15 +139,16 @@ public class Model {
 	
 	/**
 	 * Eseguo la schedulazione su singola componente connessa attraverso l'algoritmo TSP
-	 * @param compconn 
+	 * @param compconn componente connessa
+	 * @return path
 	 */
 	public List<Hotspot> schedule(Set<Hotspot> compconn) {
 		
 			System.out.println("---Nuovo TSP---\n");
-			TSP tsp = new TSP(compconn, graph);
+			TSP tsp = new TSP(graph, compconn);
 			System.out.println(compconn.toString());
 			tsp.solve();
-		return tsp.printSolution();
+		return tsp.getSolution();
 			
 //			TSP tsp = new TSP(listcompconn.get(0), graph);              //TEST sulla prima componente
 //			System.out.println(listcompconn.get(0).toString());
@@ -159,22 +158,53 @@ public class Model {
 	}
 	
 	
-	//Calcolo il TSP con una classe Java
-	public List<Hotspot> TSPwithJClass(Set<Hotspot> compconn) {
+	/**
+	 * Esegue la schedulazione approssimata su singola componente connessa
+	 * @param compconn componente connessa
+	 * @return path
+	 */
+	public List<Hotspot> TSPApprox(Set<Hotspot> compconn) {
 		
 		Graph<Hotspot, DefaultWeightedEdge> subgraph = new AsSubgraph<Hotspot, DefaultWeightedEdge>(graph, compconn);
 		
+		//Rendo il sottografo completo per poter applicare TwoApproxMetric
+//		Graph<Hotspot, DefaultWeightedEdge> subgraph = new SimpleWeightedGraph<Hotspot, DefaultWeightedEdge>(DefaultWeightedEdge.class);
+//		for(Hotspot h1 : compconn) {
+//			for(Hotspot h2 : compconn) {
+//				if(!h1.equals(h2)) {
+//					
+//					double distance = this.calculateDistance(h1, h2);
+//					if(distance <= maxDist) {
+//						Graphs.addEdge(subgraph, h1, h2, distance);
+//					}else
+//						Graphs.addEdge(subgraph, h1, h2, Double.MAX_VALUE);
+//				}
+//			}
+//		}
+		
 		System.out.println(String.format("--Sottografo-- Vertici: %d, Archi:%d" , subgraph.vertexSet().size(), subgraph.edgeSet().size()));
 		
-		TwoApproxMetricTSP<Hotspot, DefaultWeightedEdge> tsp = new TwoApproxMetricTSP<>();          //il grafo deve essere completo!!
-		GraphPath<Hotspot, DefaultWeightedEdge> gp = tsp.getTour(subgraph);            //su sottografo
 		
-		List<Hotspot> path = gp.getVertexList();
+//		for(Hotspot h1: subgraph.vertexSet()) {                          
+//			for(Hotspot h2: subgraph.vertexSet()) {
+//				if(!h1.equals(h2) && !subgraph.containsEdge(h1, h2)) {
+//					Graphs.addEdge(subgraph, h1, h2, Double.MAX_VALUE);
+//				}
+//			}
+//		}
+		//System.out.println(String.format("--Completato!-- Vertici: %d, Archi:%d" , subgraph.vertexSet().size(), subgraph.edgeSet().size()));
+ 
+//		TwoApproxMetricTSP<Hotspot, DefaultWeightedEdge> tsp = new TwoApproxMetricTSP<>();          //il grafo deve essere completo!!
+//		GraphPath<Hotspot, DefaultWeightedEdge> gp = tsp.getTour(subgraph);            //su sottografo
+//		
+//		List<Hotspot> path = gp.getVertexList();
 		
-		for(Hotspot h : path)
-			System.out.println(h.toString());
+//		for(Hotspot h : path)
+//			System.out.println(h.toString());
 		
-		return path;
+		TSPApproximation tspa = new TSPApproximation(subgraph, compconn);
+		tspa.solve();
+		return tspa.getSolution();
 	}
 	
 

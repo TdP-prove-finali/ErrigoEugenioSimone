@@ -1,23 +1,24 @@
 package it.polito.tesi;
 
+import java.io.IOException;
 import java.net.URL;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.ResourceBundle;
-import java.util.Set;
 
 import it.polito.tesi.model.Borough;
-import it.polito.tesi.model.Hotspot;
 import it.polito.tesi.model.Model;
 import it.polito.tesi.model.Provider;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
-import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
 
 public class HNYController {
 	
@@ -49,13 +50,12 @@ public class HNYController {
     
     @FXML
     private Button btnResearch;
-
+    
     @FXML
-    private TextArea txtResult;
-
+    private Label labelinfo;
+   
     @FXML
-    void doSchedule(ActionEvent event) {
-    	txtResult.clear();
+    void doSchedule(ActionEvent event) throws IOException{
     	
     	StringBuilder es = new StringBuilder();
     	boolean err = false;
@@ -84,41 +84,33 @@ public class HNYController {
 			}
 			
 			if(!err){
+				
 				model.createGraph(prov, boro, maxDist, failure, allIsSelected);
-				txtResult.appendText("Graph correctly created.\n");
+				System.out.println("Graph correctly created.\n");
 				
-				if(model.getCC().size()!=0) {
-					txtResult.appendText("Connected components: "+ model.getCC().size()+"\n");
-					
-					for(Set<Hotspot> compconn : model.getCC()) {
-						StringBuilder s = new StringBuilder();
-						
-						List<Hotspot> tsp = new LinkedList<>();
-						if(!approximate) 
-							 tsp = model.schedule(compconn);
-						else 
-							tsp = model.TSPApprox(compconn);						
-						
-						txtResult.appendText("---TSP---\n");
-						
-						for(Hotspot h: tsp)
-							s.append(h.print()+"\n");
-						
-						txtResult.appendText(s.toString());
-					}
-				
-				}else {
-					txtResult.appendText("Graph has not connected components. Cannot schedule!");
-					throw new IllegalArgumentException("Graph has not connected components. Cannot schedule!");
-				}
+				this.changeScene(event, approximate);
 				
 			}else
-				txtResult.appendText(es.toString());
+				labelinfo.setText(es.toString());
 			
 		} catch (NumberFormatException e) {
-			txtResult.appendText("Insert numeric value in Max. distance field.\n");
+			labelinfo.setText("Insert numeric value in Max. distance field.\n");
 		}
+    }
+    
+    private void changeScene(ActionEvent event, boolean approximate) throws IOException {
+    	
+    	Stage stage = (Stage) btnResearch.getScene().getWindow();
+    	FXMLLoader loader = new FXMLLoader(getClass().getResource("TableView.fxml"));
+		BorderPane root = (BorderPane) loader.load();
+		
+		TableViewController TVcontroller = loader.getController();
+		TVcontroller.setModel(model, approximate);
 
+		Scene scene2 = new Scene(root);
+		stage.setScene(scene2);
+		stage.show();
+		
     }
 
     @FXML
@@ -130,7 +122,7 @@ public class HNYController {
         assert btnResearch != null : "fx:id=\"btnResearch\" was not injected: check your FXML file 'HotspotNY.fxml'.";
         assert checkAllBorough != null : "fx:id=\"checkAllBorough\" was not injected: check your FXML file 'HotspotNY.fxml'.";
         assert checkApproximate != null : "fx:id=\"checkApproximate\" was not injected: check your FXML file 'HotspotNY.fxml'.";
-        assert txtResult != null : "fx:id=\"txtResult\" was not injected: check your FXML file 'HotspotNY.fxml'.";
+        assert labelinfo != null : "fx:id=\"labelinfo\" was not injected: check your FXML file 'HotspotNY.fxml'.";
 
     }
     
@@ -149,6 +141,7 @@ public class HNYController {
     	});
     	
     	checkApproximate.setSelected(true);
+    	
 
     }
     

@@ -1,6 +1,7 @@
 package it.polito.tesi.model;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
@@ -16,6 +17,8 @@ import com.javadocmd.simplelatlng.LatLngTool;
 import com.javadocmd.simplelatlng.util.LengthUnit;
 
 import it.polito.tesi.db.HotspotDAO;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 public class Model {
 	
@@ -142,7 +145,7 @@ public class Model {
 	 * @param compconn componente connessa
 	 * @return path
 	 */
-	public List<Hotspot> schedule(Set<Hotspot> compconn) {
+	private List<Hotspot> TSPAlg(Set<Hotspot> compconn) {
 		
 			System.out.println("---Nuovo TSP---\n");
 			TSP tsp = new TSP(graph, compconn);
@@ -163,7 +166,7 @@ public class Model {
 	 * @param compconn componente connessa
 	 * @return path
 	 */
-	public List<Hotspot> TSPApprox(Set<Hotspot> compconn) {
+	private List<Hotspot> TSPApprox(Set<Hotspot> compconn) {
 		
 		Graph<Hotspot, DefaultWeightedEdge> subgraph = new AsSubgraph<Hotspot, DefaultWeightedEdge>(graph, compconn);
 		
@@ -207,6 +210,29 @@ public class Model {
 		return tspa.getSolution();
 	}
 	
+	
+	public ObservableList<Hotspot> schedule(boolean approximate) {
+		
+		ObservableList<Hotspot> oblist = FXCollections.observableArrayList();
+		
+		for(Set<Hotspot> compconn : this.getCC()) {
+			//StringBuilder s = new StringBuilder();
+			
+			List<Hotspot> tsp = new LinkedList<>();
+			if(!approximate) 
+				 tsp = this.TSPAlg(compconn);
+			else 
+				 tsp = this.TSPApprox(compconn);						
+			
+//			for(Hotspot h: tsp)
+//				s.append(h.print()+"\n");
+			
+			oblist.addAll(tsp);
+			//devo inserire elemento separatore
+		}
+		
+		return oblist;
+	}
 
 	
 }

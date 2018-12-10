@@ -78,9 +78,9 @@ public class HNYController {
 				es.append("Choose a value in Borough box.\n");
 			}
     	
-			if(maxDist<500) {
+			if(maxDist<1) {
 				err = true;
-				es.append("Insert a value greater than 500.\n");       
+				es.append("Insert a value greater than 1km.\n");       
 			}
 			
 			if(!err){
@@ -88,7 +88,12 @@ public class HNYController {
 				model.createGraph(prov, boro, maxDist, failure, allIsSelected);
 				System.out.println("Graph correctly created.\n");
 				
-				this.changeScene(event, approximate);
+				if(model.getCC().size()!=0) {
+					this.changeScene(event, approximate);
+				}else {
+					labelinfo.setText("Graph has not connected components. Cannot schedule!");
+					throw new IllegalArgumentException("Graph has not connected components. Cannot schedule!");
+				}
 				
 			}else
 				labelinfo.setText(es.toString());

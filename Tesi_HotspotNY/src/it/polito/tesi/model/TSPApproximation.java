@@ -15,7 +15,7 @@ import org.jgrapht.graph.GraphWalk;
 import org.jgrapht.graph.SimpleGraph;
 import org.jgrapht.traverse.DepthFirstIterator;
 
-public class TSPApproximation extends TSPAlgorithm {
+public class TSPApproximation extends TSPAlgorithms {
 	
 	List<Hotspot> path;
 
@@ -23,6 +23,9 @@ public class TSPApproximation extends TSPAlgorithm {
 		super(graph, compconn);
 	}
 
+	/**
+	 * Calcola la sequenza approssimata di hotspot da visitare che minimizza la distanza da percorrere
+	 */
 	@Override
 	public void solve() {
 		
@@ -40,18 +43,15 @@ public class TSPApproximation extends TSPAlgorithm {
 	
 	private GraphPath<Hotspot, DefaultWeightedEdge> getPath(){
 		
-		/*
-         * Special case singleton vertex
-         */
+		
         if (graph.vertexSet().size() == 1) {
             Hotspot start = graph.vertexSet().iterator().next();
             return new GraphWalk<>(
                 graph, start, start, Collections.singletonList(start), Collections.emptyList(), 0d);
         }
         
-        /*
-         * Create MinimunSpanningTree
-         */
+
+         //Create MinimunSpanningTree
         Graph<Hotspot, DefaultWeightedEdge> mst = new SimpleGraph<>(DefaultWeightedEdge.class);
         for (Hotspot v : graph.vertexSet()) {
             mst.addVertex(v);
@@ -60,9 +60,8 @@ public class TSPApproximation extends TSPAlgorithm {
             mst.addEdge(graph.getEdgeSource(e), graph.getEdgeTarget(e));
         }
         
-        /*
-         * Perform a depth-first-search traversal
-         */
+        
+        //depth-first-search
         int n = graph.vertexSet().size();
         Set<Hotspot> found = new HashSet<>(n);
         List<Hotspot> tour = new ArrayList<>(n + 1);
@@ -77,9 +76,7 @@ public class TSPApproximation extends TSPAlgorithm {
         // repeat the start vertex
         tour.add(start);
         
-        /*
-         * Explicitly build the path.
-         */
+      
         List<DefaultWeightedEdge> tourEdges = new ArrayList<>(n);
         double tourWeight = 0d;
         Iterator<Hotspot> tourIt = tour.iterator();

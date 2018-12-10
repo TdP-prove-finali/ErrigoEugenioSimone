@@ -8,7 +8,7 @@ import org.jgrapht.Graph;
 import org.jgrapht.Graphs;
 import org.jgrapht.graph.DefaultWeightedEdge;
 
-public class TSP extends TSPAlgorithm{
+public class TSP extends TSPAlgorithms{
 
 	private List<Hotspot> best;
 	private double bestWeight;
@@ -20,7 +20,7 @@ public class TSP extends TSPAlgorithm{
 	}
 	
 	/**
-	 * Calcola la sequenza ottimale di hotspot da riparare che minimizza la distanza da percorrere, utilizzando la ricorsione
+	 * Calcola la sequenza ottimale di hotspot da visitare che minimizza la distanza da percorrere, utilizzando la ricorsione
 	 */
 	@Override
 	public void solve() {
@@ -29,7 +29,10 @@ public class TSP extends TSPAlgorithm{
 		bestWeight = Double.MAX_VALUE;
 		
 		List<Hotspot> parziale = new ArrayList<Hotspot>();
-		parziale.add(compconn.get(0));
+		
+		int random = (int) (Math.random()*compconn.size());
+		parziale.add(compconn.get(random));
+		
 		this.explore(parziale, 1);
 	}
 	
@@ -47,7 +50,7 @@ public class TSP extends TSPAlgorithm{
 				bestWeight = weightOf(best);
 				
 				System.out.println(bestWeight + best.toString());
-				//return;
+				return;
 			}
 		}
 		
@@ -57,7 +60,7 @@ public class TSP extends TSPAlgorithm{
 		System.out.println("Adiacenti: "+adiacenti);
 			
 		for(Hotspot h : adiacenti) {
-			if(!parziale.contains(h) && compconn.contains(h)) {
+			if(compconn.contains(h) && !parziale.contains(h)) {
 				parziale.add(h);
 				this.explore(parziale, step+1);
 				parziale.remove(h);
@@ -84,6 +87,7 @@ public class TSP extends TSPAlgorithm{
 				return Double.MAX_VALUE;
 		}
 		
+		//Calcolo il peso della soluzione parziale 
 		for(int i=0; i< parziale.size()-1; i++) {
 			DefaultWeightedEdge e = graph.getEdge(parziale.get(i), parziale.get(i+1));
 			System.out.println(graph.getEdgeWeight(e));

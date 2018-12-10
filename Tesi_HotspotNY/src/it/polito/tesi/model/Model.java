@@ -1,9 +1,12 @@
 package it.polito.tesi.model;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import org.jgrapht.Graph;
 import org.jgrapht.Graphs;
@@ -104,7 +107,7 @@ public class Model {
 		
 		double distance = LatLngTool.distance(new LatLng(h1.getLatitude(), h1.getLongitude()),
 												new LatLng(h2.getLatitude(), h2.getLongitude()),
-													LengthUnit.METER);
+													LengthUnit.KILOMETER);
 		return distance;
 	}
 
@@ -141,7 +144,7 @@ public class Model {
 	
 	
 	/**
-	 * Eseguo la schedulazione su singola componente connessa attraverso l'algoritmo TSP
+	 * Esegue la schedulazione su singola componente connessa attraverso l'algoritmo TSP
 	 * @param compconn componente connessa
 	 * @return path
 	 */
@@ -170,47 +173,18 @@ public class Model {
 		
 		Graph<Hotspot, DefaultWeightedEdge> subgraph = new AsSubgraph<Hotspot, DefaultWeightedEdge>(graph, compconn);
 		
-		//Rendo il sottografo completo per poter applicare TwoApproxMetric
-//		Graph<Hotspot, DefaultWeightedEdge> subgraph = new SimpleWeightedGraph<Hotspot, DefaultWeightedEdge>(DefaultWeightedEdge.class);
-//		for(Hotspot h1 : compconn) {
-//			for(Hotspot h2 : compconn) {
-//				if(!h1.equals(h2)) {
-//					
-//					double distance = this.calculateDistance(h1, h2);
-//					if(distance <= maxDist) {
-//						Graphs.addEdge(subgraph, h1, h2, distance);
-//					}else
-//						Graphs.addEdge(subgraph, h1, h2, Double.MAX_VALUE);
-//				}
-//			}
-//		}
-		
 		System.out.println(String.format("--Sottografo-- Vertici: %d, Archi:%d" , subgraph.vertexSet().size(), subgraph.edgeSet().size()));
-		
-		
-//		for(Hotspot h1: subgraph.vertexSet()) {                          
-//			for(Hotspot h2: subgraph.vertexSet()) {
-//				if(!h1.equals(h2) && !subgraph.containsEdge(h1, h2)) {
-//					Graphs.addEdge(subgraph, h1, h2, Double.MAX_VALUE);
-//				}
-//			}
-//		}
-		//System.out.println(String.format("--Completato!-- Vertici: %d, Archi:%d" , subgraph.vertexSet().size(), subgraph.edgeSet().size()));
- 
-//		TwoApproxMetricTSP<Hotspot, DefaultWeightedEdge> tsp = new TwoApproxMetricTSP<>();          //il grafo deve essere completo!!
-//		GraphPath<Hotspot, DefaultWeightedEdge> gp = tsp.getTour(subgraph);            //su sottografo
-//		
-//		List<Hotspot> path = gp.getVertexList();
-		
-//		for(Hotspot h : path)
-//			System.out.println(h.toString());
 		
 		TSPApproximation tspa = new TSPApproximation(subgraph, compconn);
 		tspa.solve();
 		return tspa.getSolution();
 	}
 	
-	
+	/**
+	 * Esegue il TSP su ogni componente connessa e da il risulato come lista
+	 * @param approximate
+	 * @return 
+	 */
 	public ObservableList<Hotspot> schedule(boolean approximate) {
 		
 		ObservableList<Hotspot> oblist = FXCollections.observableArrayList();
@@ -219,16 +193,29 @@ public class Model {
 			//StringBuilder s = new StringBuilder();
 			
 			List<Hotspot> tsp = new LinkedList<>();
-			if(!approximate) 
-				 tsp = this.TSPAlg(compconn);
-			else 
+			if(!approximate) {
+				
+//				Timer timer = new Timer();
+//				timer.schedule(new TimerTask() {
+//					@Override
+//					public void run() {
+//						System.exit(0);
+//					}
+//				}, new Date(System.currentTimeMillis()+5*1000));
+				
+				tsp = this.TSPAlg(compconn);
+		
+			}else 
 				 tsp = this.TSPApprox(compconn);						
 			
 //			for(Hotspot h: tsp)
 //				s.append(h.print()+"\n");
 			
+			if(tsp.size()==1)
+			
 			oblist.addAll(tsp);
-			//devo inserire elemento separatore
+			oblist.add(new Hotspot());  //separatore
+			
 		}
 		
 		return oblist;

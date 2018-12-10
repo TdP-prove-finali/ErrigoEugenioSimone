@@ -15,6 +15,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
@@ -29,7 +30,7 @@ public class TableViewController {
     private URL location;
 
     @FXML
-    private TableView<Hotspot> tableView;
+    private TableView<Hotspot> tableView;   
 
     @FXML
     private TableColumn<Hotspot, String> locationColumn;
@@ -70,19 +71,17 @@ public class TableViewController {
     
     private void doSchedule(boolean approximate) {
     	
-    	if(model.getCC().size()!=0) {
-			labelinfo.setText("Number of areas (connected components) : "+ model.getCC().size()+"\n");
+    	labelinfo.setText("Number of areas (connected components) : "+ model.getCC().size()+"\n");
 		
 			ObservableList<Hotspot> oblist = model.schedule(approximate);
+			locationColumn.setCellValueFactory(new PropertyValueFactory<Hotspot, String>("Location"));
+	        streetColumn.setCellValueFactory(new PropertyValueFactory<Hotspot, String>("Street"));
+	        cityColumn.setCellValueFactory(new PropertyValueFactory<Hotspot, String>("City"));
+	        SSIDColumn.setCellValueFactory(new PropertyValueFactory<Hotspot, String>("SSID"));
+	        infoColumn.setCellValueFactory(new PropertyValueFactory<Hotspot, String>("Remark"));
 			tableView.setItems(oblist);
 			
-		}else {
-			labelinfo.setText("Graph has not connected components. Cannot schedule!");
-			throw new IllegalArgumentException("Graph has not connected components. Cannot schedule!");
-		}
    
-    	
-    	
     }
 
     @FXML

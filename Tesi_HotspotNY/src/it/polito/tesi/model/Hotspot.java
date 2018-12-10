@@ -29,6 +29,9 @@ public class Hotspot {
 		SSID = sSID;
 	}
 
+	public Hotspot() {	
+	}
+
 	public int getId() {
 		return id;
 	}

@@ -72,6 +72,8 @@ public class TableViewController {
     private void doSchedule(boolean approximate) {
     	
     	labelinfo.setText("Number of areas (connected components) : "+ model.getCC().size()+"\n");
+//    	if(approximate)
+//    		labelinfo.setText("*approximated");
 		
 			ObservableList<Hotspot> oblist = model.schedule(approximate);
 			locationColumn.setCellValueFactory(new PropertyValueFactory<Hotspot, String>("Location"));

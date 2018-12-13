@@ -13,6 +13,9 @@ public class TSP extends TSPAlgorithms{
 	private List<Hotspot> best;
 	private double bestWeight;
 	private List<Hotspot> compconn;
+	private long start_time;
+	private long end_time;
+	private boolean isLate;
 	
 	public TSP(Graph<Hotspot, DefaultWeightedEdge> graph, Set<Hotspot> compconn) {
 		super(graph, compconn);
@@ -28,12 +31,23 @@ public class TSP extends TSPAlgorithms{
 		best = new ArrayList<Hotspot>();
 		bestWeight = Double.MAX_VALUE;
 		
-		List<Hotspot> parziale = new ArrayList<Hotspot>();
-		
-		int random = (int) (Math.random()*compconn.size());
-		parziale.add(compconn.get(random));
-		
-		this.explore(parziale, 1);
+		if(compconn.size()==1)
+			best.add(compconn.get(0));
+		else {
+			isLate = false;
+			start_time = System.currentTimeMillis();
+			end_time = start_time+10L;
+	
+			List<Hotspot> parziale = new ArrayList<Hotspot>();
+			
+			int random = (int) (Math.random()*compconn.size());
+			parziale.add(compconn.get(random));
+			
+			isLate = this.explore(parziale, 1);
+			
+			if(!best.isEmpty())
+				best.add(best.get(0));
+		}
 	}
 	
 	/**
@@ -42,15 +56,20 @@ public class TSP extends TSPAlgorithms{
 	 * @param parziale
 	 * @param step
 	 */
-	private void explore(List<Hotspot> parziale, int step) {
+	private boolean explore(List<Hotspot> parziale, int step) {
 		
-		if(step>=compconn.size()) {                                                               
+//		System.out.println("now:"+System.currentTimeMillis());
+//		System.out.println("end:"+end_time);
+		if(System.currentTimeMillis()>end_time)
+			return true;
+		
+		if(step>=compconn.size()) {
 			if(weightOf(parziale) < bestWeight) {
 				best = new ArrayList<>(parziale);
 				bestWeight = weightOf(best);
 				
 				System.out.println(bestWeight + best.toString());
-				return;
+				//return;                                           
 			}
 		}
 		
@@ -66,6 +85,8 @@ public class TSP extends TSPAlgorithms{
 				parziale.remove(h);
 			}
 		}
+		
+		return false;
 		
 	}
 
@@ -87,18 +108,28 @@ public class TSP extends TSPAlgorithms{
 				return Double.MAX_VALUE;
 		}
 		
+		//Controllo che la soluzione candidata abbia un arco tra l'ultimo e il primo hotspot
+		if(!graph.containsEdge(parziale.get(parziale.size()-1), parziale.get(0))) {
+			return Double.MAX_VALUE;
+		}
+		
 		//Calcolo il peso della soluzione parziale 
 		for(int i=0; i< parziale.size()-1; i++) {
 			DefaultWeightedEdge e = graph.getEdge(parziale.get(i), parziale.get(i+1));
 			System.out.println(graph.getEdgeWeight(e));
 			peso += graph.getEdgeWeight(e);
 		}
+		//Aggiungo il peso dell'arco tra l'ultimo e il primo hotspot
+		DefaultWeightedEdge e = graph.getEdge(parziale.get(parziale.size()-1), parziale.get(0));
+		System.out.println(graph.getEdgeWeight(e));
+		peso += graph.getEdgeWeight(e);
+		
 		
 		System.out.println("Peso: "+peso);
 		return peso;
 	}
 
-
+	
 	/**
 	 * Ottiene la soluzione del TSP
 	 */
@@ -111,6 +142,10 @@ public class TSP extends TSPAlgorithms{
 		System.out.println("\nBest weight: "+bestWeight+"\n");
 		
 		return best;
+	}
+	
+	public boolean isLate() {
+		return isLate;
 	}
 	
 	

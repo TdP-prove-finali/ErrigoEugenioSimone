@@ -29,8 +29,6 @@ public class Model {
 	private Graph<Hotspot, DefaultWeightedEdge> graph;
 	private BoroughIdMap bmap;
 	
-	private int maxDist;
-	
 	public Model() {
 		dao = new HotspotDAO();
 		bmap = new BoroughIdMap();
@@ -65,10 +63,9 @@ public class Model {
 	 * @param failure
 	 * @param allIsSelected
 	 */
-	public void createGraph(Provider provider, Borough borough, int maxDist, double failure, boolean allIsSelected) {
+	public void createGraph(Provider provider, Borough borough, double maxDist, double failure, boolean allIsSelected) {
 		
 		graph = new SimpleWeightedGraph<Hotspot, DefaultWeightedEdge>(DefaultWeightedEdge.class);
-		//this.maxDist = maxDist;
 	
 		List<Hotspot> allVertex = new ArrayList<>();
 		
@@ -143,6 +140,7 @@ public class Model {
 	}
 	
 	
+	
 	/**
 	 * Esegue la schedulazione su singola componente connessa attraverso l'algoritmo TSP
 	 * @param compconn componente connessa
@@ -154,7 +152,12 @@ public class Model {
 			TSP tsp = new TSP(graph, compconn);
 			System.out.println(compconn.toString());
 			tsp.solve();
-		return tsp.getSolution();
+			
+			if(tsp.isLate() || tsp.getSolution().isEmpty()) 
+				return TSPApprox(compconn);
+			else
+				return tsp.getSolution();
+			
 			
 //			TSP tsp = new TSP(listcompconn.get(0), graph);              //TEST sulla prima componente
 //			System.out.println(listcompconn.get(0).toString());
@@ -190,18 +193,9 @@ public class Model {
 		ObservableList<Hotspot> oblist = FXCollections.observableArrayList();
 		
 		for(Set<Hotspot> compconn : this.getCC()) {
-			//StringBuilder s = new StringBuilder();
 			
 			List<Hotspot> tsp = new LinkedList<>();
 			if(!approximate) {
-				
-//				Timer timer = new Timer();
-//				timer.schedule(new TimerTask() {
-//					@Override
-//					public void run() {
-//						System.exit(0);
-//					}
-//				}, new Date(System.currentTimeMillis()+5*1000));
 				
 				tsp = this.TSPAlg(compconn);
 		
@@ -211,10 +205,10 @@ public class Model {
 //			for(Hotspot h: tsp)
 //				s.append(h.print()+"\n");
 			
-			if(tsp.size()==1)
-			
 			oblist.addAll(tsp);
-			oblist.add(new Hotspot());  //separatore
+			
+			if(!tsp.isEmpty())               //per cc con 1 solo vertice e tsp vuoto
+				oblist.add(new Hotspot());  //separatore
 			
 		}
 		

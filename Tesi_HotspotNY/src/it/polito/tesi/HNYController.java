@@ -61,7 +61,7 @@ public class HNYController {
     	boolean err = false;
     	
     	try {
-			int maxDist = Integer.parseInt(txtDistance.getText().trim());
+			double maxDist = Double.parseDouble(txtDistance.getText().trim());
 			Provider prov = comboProvider.getValue();
 			Borough boro = comboBorough.getValue();
 			double failure = sldFailure.getValue();

@@ -36,7 +36,7 @@ public class TSP extends TSPAlgorithms{
 		else {
 			isLate = false;
 			start_time = System.currentTimeMillis();
-			end_time = start_time+10L;
+			end_time = start_time+2000;
 	
 			List<Hotspot> parziale = new ArrayList<Hotspot>();
 			
@@ -58,8 +58,6 @@ public class TSP extends TSPAlgorithms{
 	 */
 	private boolean explore(List<Hotspot> parziale, int step) {
 		
-//		System.out.println("now:"+System.currentTimeMillis());
-//		System.out.println("end:"+end_time);
 		if(System.currentTimeMillis()>end_time)
 			return true;
 		
@@ -147,6 +145,12 @@ public class TSP extends TSPAlgorithms{
 	public boolean isLate() {
 		return isLate;
 	}
+
+	@Override
+	public double getBestWeight() {
+		return bestWeight;
+	}
+	
 	
 	
 	

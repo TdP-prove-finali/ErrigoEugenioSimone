@@ -1,12 +1,9 @@
 package it.polito.tesi.model;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
-import java.util.Timer;
-import java.util.TimerTask;
 
 import org.jgrapht.Graph;
 import org.jgrapht.Graphs;
@@ -20,19 +17,17 @@ import com.javadocmd.simplelatlng.LatLngTool;
 import com.javadocmd.simplelatlng.util.LengthUnit;
 
 import it.polito.tesi.db.HotspotDAO;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 
 public class Model {
 	
 	private HotspotDAO dao;
 	private Graph<Hotspot, DefaultWeightedEdge> graph;
 	private BoroughIdMap bmap;
+	private double totdistance;
 	
 	public Model() {
 		dao = new HotspotDAO();
 		bmap = new BoroughIdMap();
-		
 	}
 	
 	public List<Provider> getAllProviders(){
@@ -155,8 +150,10 @@ public class Model {
 			
 			if(tsp.isLate() || tsp.getSolution().isEmpty()) 
 				return TSPApprox(compconn);
-			else
+			else {
+				totdistance += tsp.getBestWeight();
 				return tsp.getSolution();
+			}
 			
 			
 //			TSP tsp = new TSP(listcompconn.get(0), graph);              //TEST sulla prima componente
@@ -180,6 +177,8 @@ public class Model {
 		
 		TSPApproximation tspa = new TSPApproximation(subgraph, compconn);
 		tspa.solve();
+		totdistance += tspa.getBestWeight();
+		
 		return tspa.getSolution();
 	}
 	
@@ -188,32 +187,35 @@ public class Model {
 	 * @param approximate
 	 * @return 
 	 */
-	public ObservableList<Hotspot> schedule(boolean approximate) {
+	public List<Route> schedule(boolean approximate) {
 		
-		ObservableList<Hotspot> oblist = FXCollections.observableArrayList();
+		List<Route> routes = new ArrayList<>();
+		int pos = 0;
 		
 		for(Set<Hotspot> compconn : this.getCC()) {
+			List<HotspotAndArea> areas = new LinkedList<>();
+			pos++;
+			totdistance = 0;
 			
 			List<Hotspot> tsp = new LinkedList<>();
 			if(!approximate) {
 				
-				tsp = this.TSPAlg(compconn);
+				tsp = this.TSPAlg(compconn);	
 		
-			}else 
-				 tsp = this.TSPApprox(compconn);						
+			}else {
+				 tsp = this.TSPApprox(compconn);	
+			}
 			
-//			for(Hotspot h: tsp)
-//				s.append(h.print()+"\n");
+			for(Hotspot h : tsp) {
+				areas.add(new HotspotAndArea(pos, h));
+			}
+
 			
-			oblist.addAll(tsp);
-			
-			if(!tsp.isEmpty())               //per cc con 1 solo vertice e tsp vuoto
-				oblist.add(new Hotspot());  //separatore
-			
+			routes.add(new Route(pos, areas, totdistance));
 		}
 		
-		return oblist;
+		return routes;
 	}
-
+	
 	
 }

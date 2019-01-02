@@ -18,5 +18,6 @@ public abstract class TSPAlgorithms {
 
 	public abstract void solve();
 	public abstract List<Hotspot> getSolution();
+	public abstract double getBestWeight();
 
 }

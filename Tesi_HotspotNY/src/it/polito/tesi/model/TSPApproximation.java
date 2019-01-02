@@ -17,7 +17,8 @@ import org.jgrapht.traverse.DepthFirstIterator;
 
 public class TSPApproximation extends TSPAlgorithms {
 	
-	List<Hotspot> path;
+	private List<Hotspot> path;
+	private double tourWeight;
 
 	public TSPApproximation(Graph<Hotspot, DefaultWeightedEdge> graph, Set<Hotspot> compconn) {
 		super(graph, compconn);
@@ -78,7 +79,7 @@ public class TSPApproximation extends TSPAlgorithms {
         
       
         List<DefaultWeightedEdge> tourEdges = new ArrayList<>(n);
-        double tourWeight = 0d;
+        tourWeight = 0d;
         Iterator<Hotspot> tourIt = tour.iterator();
         Hotspot u = tourIt.next();
         while (tourIt.hasNext()) {
@@ -99,5 +100,11 @@ public class TSPApproximation extends TSPAlgorithms {
 		return path;
 	}
 
+	@Override
+	public double getBestWeight() {
+		return tourWeight;
+	}
+
+	
 
 }

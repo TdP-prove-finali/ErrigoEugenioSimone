@@ -118,8 +118,6 @@ public class Model {
 			badVertex.remove(badVertex.get((int) (Math.random()*badVertex.size())));
 		}
 		
-		//Collections.shuffle(allVertex);
-		
 		return badVertex;
 	}
 

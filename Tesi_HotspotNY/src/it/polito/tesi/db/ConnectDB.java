@@ -8,7 +8,7 @@ import com.zaxxer.hikari.HikariDataSource;
 
 public class ConnectDB {
 	
-	private static final String jdbcURL = "jdbc:mysql://localhost/wifi_hotspot_nyc";  //percorso database
+	private static final String jdbcURL = "jdbc:mysql://localhost/nyc_wifi_hotspot";  //percorso database
 	private static HikariDataSource ds;
 	
 	public static Connection getConnection() {

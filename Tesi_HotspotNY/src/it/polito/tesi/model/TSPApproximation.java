@@ -91,7 +91,7 @@ public class TSPApproximation extends TSPAlgorithms {
 	            u = v;
             }
         }
-        return new GraphWalk<>(graph, start, start, tourEdges, tourWeight);   //ho rimosso tour=vertexList
+        return new GraphWalk<>(graph, start, start, tourEdges, tourWeight);   
         
     }
 

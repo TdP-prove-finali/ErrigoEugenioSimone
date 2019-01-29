@@ -10,9 +10,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polito.tesi.TableViewController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polito.tesi.TableViewController">
    <center>
-      <VBox BorderPane.alignment="CENTER">
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="800.0" BorderPane.alignment="CENTER">
          <children>
             <Label text="Scheduling results">
                <VBox.margin>
@@ -27,14 +27,14 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" />
                </VBox.margin>
             </Label>
-            <TableView fx:id="tableView" maxHeight="300.0" prefHeight="300.0" tableMenuButtonVisible="true">
+            <TableView fx:id="tableView" maxHeight="400.0" prefHeight="400.0" tableMenuButtonVisible="true">
               <columns>
                   <TableColumn fx:id="numareaColumn" editable="false" prefWidth="45.0" resizable="false" sortable="false" text="Area" />
-                <TableColumn fx:id="locationColumn" editable="false" prefWidth="155.0" sortable="false" text="Location" />
-                <TableColumn fx:id="streetColumn" editable="false" prefWidth="153.0" sortable="false" text="Street" />
-                  <TableColumn fx:id="cityColumn" editable="false" prefWidth="64.0" sortable="false" text="City" />
-                  <TableColumn fx:id="SSIDColumn" editable="false" minWidth="0.0" prefWidth="85.0" sortable="false" text="SSID" />
-                  <TableColumn fx:id="infoColumn" editable="false" minWidth="0.0" prefWidth="87.0" sortable="false" text="Info" />
+                <TableColumn fx:id="locationColumn" editable="false" prefWidth="172.0" sortable="false" text="Location" />
+                <TableColumn fx:id="streetColumn" editable="false" prefWidth="180.0" sortable="false" text="Street" />
+                  <TableColumn fx:id="cityColumn" editable="false" prefWidth="96.0" sortable="false" text="City" />
+                  <TableColumn fx:id="SSIDColumn" editable="false" minWidth="0.0" prefWidth="111.0" sortable="false" text="SSID" />
+                  <TableColumn fx:id="infoColumn" editable="false" minWidth="0.0" prefWidth="169.0" sortable="false" text="Info" />
               </columns>
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />

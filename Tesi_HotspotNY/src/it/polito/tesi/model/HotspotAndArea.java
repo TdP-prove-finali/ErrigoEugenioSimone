@@ -19,11 +19,11 @@ public class HotspotAndArea {
 	}
 	
 	public HotspotAndArea() {   //separatore
-		this.location = "-";
-		this.street = "-";
-		this.city = "-";
-		this.SSID = "-";
-		this.remark = "-";
+		this.location = null;
+		this.street = null;
+		this.city = null;
+		this.SSID = null;
+		this.remark = null;
 	}
 
 	public int getNumarea() {
@@ -50,5 +50,58 @@ public class HotspotAndArea {
 		return remark;
 	}
 
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((SSID == null) ? 0 : SSID.hashCode());
+		result = prime * result + ((city == null) ? 0 : city.hashCode());
+		result = prime * result + ((location == null) ? 0 : location.hashCode());
+		result = prime * result + numarea;
+		result = prime * result + ((remark == null) ? 0 : remark.hashCode());
+		result = prime * result + ((street == null) ? 0 : street.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		HotspotAndArea other = (HotspotAndArea) obj;
+		if (SSID == null) {
+			if (other.SSID != null)
+				return false;
+		} else if (!SSID.equals(other.SSID))
+			return false;
+		if (city == null) {
+			if (other.city != null)
+				return false;
+		} else if (!city.equals(other.city))
+			return false;
+		if (location == null) {
+			if (other.location != null)
+				return false;
+		} else if (!location.equals(other.location))
+			return false;
+		if (numarea != other.numarea)
+			return false;
+		if (remark == null) {
+			if (other.remark != null)
+				return false;
+		} else if (!remark.equals(other.remark))
+			return false;
+		if (street == null) {
+			if (other.street != null)
+				return false;
+		} else if (!street.equals(other.street))
+			return false;
+		return true;
+	}
+
+	
 
 }

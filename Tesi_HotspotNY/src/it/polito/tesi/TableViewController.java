@@ -76,6 +76,7 @@ public class TableViewController {
 		Scene scene = new Scene(root);
 		stage.setScene(scene);
 		stage.show();
+		stage.setResizable(false);
 		
     }
     
@@ -106,7 +107,15 @@ public class TableViewController {
 		double totTime = 0;
 		for(Route r : routes) {
 			sb.append("Area "+r.getArea());
-			sb.append(" - Operations: "+r.getHotspots().size());
+			int numop = 0;
+			if(r.getHotspots().size() == 1)
+				numop = 1;
+			else if(r.getHotspots().get(0).equals(r.getHotspots().get(r.getHotspots().size()-1)))
+				numop = (r.getHotspots().size()-1);
+			else
+				numop = r.getHotspots().size();
+			
+			sb.append(" - Operations: "+numop);
 			BigDecimal b = new BigDecimal(r.getRouteTime());
 			sb.append(", moving time: " + b.setScale(2, BigDecimal.ROUND_HALF_UP).doubleValue()+" min\n");
 			totTime += r.getRouteTime();

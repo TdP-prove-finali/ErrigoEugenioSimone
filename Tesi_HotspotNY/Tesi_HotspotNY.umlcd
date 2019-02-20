@@ -1,0 +1,2344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_IBA1UDE9EemOvvAcGBmHtg">
+  <modelElement href="Tesi_HotspotNY.uml#_Is5D4DE9EemOvvAcGBmHtg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SKwsgDE9EemOvvAcGBmHtg" sourceAnchor="91.0,137.0" targetAnchor="223.0,0.0" target="_SI5rUDE9EemOvvAcGBmHtg" source="_SLcpADE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9RCMTE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_SLUtMDE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9RpQDE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SLRC0DE9EemOvvAcGBmHtg" text="">
+      <visualProperties xmi:id="_TMZvsDE9EemOvvAcGBmHtg" position="-48.0,-1.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_SLS4ADE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9RCMjE9EemOvvAcGBmHtg"/>
+      <visualProperties xmi:id="_TMZIojE9EemOvvAcGBmHtg" position="2.0,44.0"/>
+      <visibility xmi:id="_SLXwgTE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SLXwgDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SLS4ATE9EemOvvAcGBmHtg" aggregationKind="NONE" name="map" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7sU4TE9EemOvvAcGBmHtg"/>
+      <visualProperties xmi:id="_TMaWwDE9EemOvvAcGBmHtg" position="2.0,-100.0"/>
+      <visibility xmi:id="_SLY-ozE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SLY-ojE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <qualifierHelper xmi:id="_SLY-oDE9EemOvvAcGBmHtg">
+        <qualifiers xmi:id="_SLY-oTE9EemOvvAcGBmHtg">
+          <modelElement href="Tesi_HotspotNY.uml#_I7tjATE9EemOvvAcGBmHtg"/>
+          <visibility xmi:id="_SLaz0DE9EemOvvAcGBmHtg" label="+"/>
+          <cardinality xmi:id="_SLaz0TE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+          <type xmi:id="_SLaMwDE9EemOvvAcGBmHtg" name="String">
+            <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </type>
+        </qualifiers>
+      </qualifierHelper>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SN11sDE9EemOvvAcGBmHtg" sourceAnchor="810.0,162.0" targetAnchor="0.0,55.0" target="_SLcpADE9EemOvvAcGBmHtg" source="_SPNusDE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9S3YTE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_SOrjMzE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9TecDE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SOrjMDE9EemOvvAcGBmHtg" text="">
+      <visualProperties xmi:id="_TMbk4DE9EemOvvAcGBmHtg" position="-41.0,-11.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_SOrjMTE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9S3YjE9EemOvvAcGBmHtg"/>
+      <visualProperties xmi:id="_TMa90DE9EemOvvAcGBmHtg" position="5.0,-67.0"/>
+      <visibility xmi:id="_SPIPITE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SPIPIDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SOrjMjE9EemOvvAcGBmHtg" aggregationKind="NONE" name="bmap" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7x0cjE9EemOvvAcGBmHtg"/>
+      <visualProperties xmi:id="_TMcL8DE9EemOvvAcGBmHtg" position="-60.0,11.0"/>
+      <visibility xmi:id="_SPI2MDE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SPIPIjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_SPBhcDE9EemOvvAcGBmHtg" targetItem="_SPNu2DE9EemOvvAcGBmHtg" sourceItem="_SOtYYDE9EemOvvAcGBmHtg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_SPDWoDE9EemOvvAcGBmHtg" targetItem="_SPNu3jE9EemOvvAcGBmHtg" sourceItem="_SPCvkDE9EemOvvAcGBmHtg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_SPD9sTE9EemOvvAcGBmHtg" targetItem="_SPNu5jE9EemOvvAcGBmHtg" sourceItem="_SPD9sDE9EemOvvAcGBmHtg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_SPEkwTE9EemOvvAcGBmHtg" targetItem="_SPNu-DE9EemOvvAcGBmHtg" sourceItem="_SPEkwDE9EemOvvAcGBmHtg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_SPFy4TE9EemOvvAcGBmHtg" targetItem="_SPNvAzE9EemOvvAcGBmHtg" sourceItem="_SPFy4DE9EemOvvAcGBmHtg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_SPGZ8TE9EemOvvAcGBmHtg" targetItem="_SPNvDjE9EemOvvAcGBmHtg" sourceItem="_SPGZ8DE9EemOvvAcGBmHtg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_SPHBATE9EemOvvAcGBmHtg" targetItem="_SPOVxTE9EemOvvAcGBmHtg" sourceItem="_SPHBADE9EemOvvAcGBmHtg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SPMgkDE9EemOvvAcGBmHtg" sourceAnchor="400.0,0.0" targetAnchor="271.0,133.0" target="_Sj8BgDE9EemOvvAcGBmHtg" source="_SPNusDE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9RpQTE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_SPMgkTE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9SQUDE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SPMgkjE9EemOvvAcGBmHtg" text="">
+      <visualProperties xmi:id="_TMeBIDE9EemOvvAcGBmHtg" position="-87.0,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_SPMgkzE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9RpQjE9EemOvvAcGBmHtg"/>
+      <visualProperties xmi:id="_TMczADE9EemOvvAcGBmHtg" position="41.0,-52.0"/>
+      <visibility xmi:id="_SPMglDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SPMglTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SPMgljE9EemOvvAcGBmHtg" aggregationKind="NONE" name="dao" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7v_QDE9EemOvvAcGBmHtg"/>
+      <visualProperties xmi:id="_TMeBITE9EemOvvAcGBmHtg" position="-21.0,-3.0"/>
+      <visibility xmi:id="_SPMglzE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SPMgmDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SPNHoDE9EemOvvAcGBmHtg" source="_SPNusDE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9SQUTE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_SPNHoTE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9S3YDE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SPNHojE9EemOvvAcGBmHtg" text=""/>
+    <sourceRole xmi:id="_SPNHozE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9SQUjE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SPNHpDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SPNHpTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SPNHpjE9EemOvvAcGBmHtg" aggregationKind="NONE" name="graph" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7wmUTE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SPNHpzE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SPNHqDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SQF4cDE9EemOvvAcGBmHtg" sourceAnchor="142.0,116.0" targetAnchor="242.0,0.0" target="_Sgd2wDE9EemOvvAcGBmHtg" source="_SQycATE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I8wE0TE9EemOvvAcGBmHtg"/>
+    <nameVisual xmi:id="_SQxN4DE9EemOvvAcGBmHtg" text="">
+      <visualProperties xmi:id="_TMf2UDE9EemOvvAcGBmHtg" position="2.0,-14.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_SQxN4TE9EemOvvAcGBmHtg" aggregationKind="NONE" name="provider" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I8BFADE9EemOvvAcGBmHtg"/>
+      <visualProperties xmi:id="_TMfPQDE9EemOvvAcGBmHtg" position="-113.0,-6.5"/>
+      <visibility xmi:id="_SQx08jE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SQx08TE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SQx08DE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I8wE0jE9EemOvvAcGBmHtg"/>
+      <visualProperties xmi:id="_TMf2UTE9EemOvvAcGBmHtg" position="-18.0,-48.5"/>
+      <visibility xmi:id="_SQycADE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SQx08zE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SUvu8DE9EemOvvAcGBmHtg" sourceAnchor="53.0,0.0" targetAnchor="1015.0,392.0" target="_Sgd2wDE9EemOvvAcGBmHtg" source="_SWHn8DE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9UskDE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_SWFLsDE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9VToDE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SWEkoDE9EemOvvAcGBmHtg" text="">
+      <visualProperties xmi:id="_TMi5oDE9EemOvvAcGBmHtg" position="2.0,34.55555555555566"/>
+    </nameVisual>
+    <sourceRole xmi:id="_SWEkoTE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9UskTE9EemOvvAcGBmHtg"/>
+      <visualProperties xmi:id="_TMiSkDE9EemOvvAcGBmHtg" position="-18.0,-154.25"/>
+      <visibility xmi:id="_SWFywTE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SWFywDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SWEkojE9EemOvvAcGBmHtg" aggregationKind="NONE" name="best" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I71e0TE9EemOvvAcGBmHtg"/>
+      <visualProperties xmi:id="_TMjgsDE9EemOvvAcGBmHtg" position="2.0,66.5"/>
+      <visibility xmi:id="_SWFywzE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SWFywjE9EemOvvAcGBmHtg" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SVkOUDE9EemOvvAcGBmHtg" sourceAnchor="23.0,0.0" targetAnchor="985.0,392.0" target="_Sgd2wDE9EemOvvAcGBmHtg" source="_SWHn8DE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9VToTE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_SWFLtDE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9V6sDE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SWFLsTE9EemOvvAcGBmHtg" text="">
+      <visualProperties xmi:id="_TMku0DE9EemOvvAcGBmHtg" position="-48.0,-1.8888888888889142"/>
+    </nameVisual>
+    <sourceRole xmi:id="_SWFLsjE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9VTojE9EemOvvAcGBmHtg"/>
+      <visualProperties xmi:id="_TMkHwDE9EemOvvAcGBmHtg" position="2.0,-88.75"/>
+      <visibility xmi:id="_SWGZ0jE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SWGZ0TE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SWFLszE9EemOvvAcGBmHtg" aggregationKind="NONE" name="compconn" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I74iIjE9EemOvvAcGBmHtg"/>
+      <visualProperties xmi:id="_TMlV4DE9EemOvvAcGBmHtg" position="-88.0,33.75"/>
+      <visibility xmi:id="_SWGZ1DE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SWGZ0zE9EemOvvAcGBmHtg" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_SWCvcDE9EemOvvAcGBmHtg" targetItem="_SWHoLjE9EemOvvAcGBmHtg" sourceItem="_SWCIYDE9EemOvvAcGBmHtg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_SWDWgTE9EemOvvAcGBmHtg" targetItem="_SWHoOTE9EemOvvAcGBmHtg" sourceItem="_SWDWgDE9EemOvvAcGBmHtg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_SW8uYDE9EemOvvAcGBmHtg" sourceAnchor="174.0,0.0" targetAnchor="239.0,162.0" superClass="_SYMrkDE9EemOvvAcGBmHtg" subClass="_SWHn8DE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I5nRQDE9EemOvvAcGBmHtg"/>
+    <bendpoints xmi:id="_KYcU0zE_EemOvvAcGBmHtg" sourceY="-30" targetX="-254" targetY="56"/>
+    <bendpoints xmi:id="_KYcU1DE_EemOvvAcGBmHtg" sourceX="254" sourceY="-29" targetY="57"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SYF94DE9EemOvvAcGBmHtg" source="_SYMrkDE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9V6sTE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_SYJoQDE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9WhwDE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SYJBMDE9EemOvvAcGBmHtg" text=""/>
+    <sourceRole xmi:id="_SYJBMTE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9V6sjE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SYKPUTE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SYKPUDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SYJBMjE9EemOvvAcGBmHtg" aggregationKind="NONE" name="graph" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I78MgDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SYKPUzE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SYKPUjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SYF94TE9EemOvvAcGBmHtg" sourceAnchor="0.0,46.0" targetAnchor="1030.0,377.0" target="_Sgd2wDE9EemOvvAcGBmHtg" source="_SYMrkDE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9WhwTE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_SYJoRDE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9XI0DE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SYJoQTE9EemOvvAcGBmHtg" text="">
+      <visualProperties xmi:id="_TMnLEDE9EemOvvAcGBmHtg" position="-33.0,-24.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_SYJoQjE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9WhwjE9EemOvvAcGBmHtg"/>
+      <visualProperties xmi:id="_TMl88DE9EemOvvAcGBmHtg" position="-29.875,-57.0"/>
+      <visibility xmi:id="_SYK2YzE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SYK2YjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SYJoQzE9EemOvvAcGBmHtg" aggregationKind="NONE" name="compconn" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I79aoDE9EemOvvAcGBmHtg"/>
+      <visualProperties xmi:id="_TMnLETE9EemOvvAcGBmHtg" position="12.0,2.0"/>
+      <visibility xmi:id="_SYLdcTE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SYLdcDE9EemOvvAcGBmHtg" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_SbTp8DE9EemOvvAcGBmHtg" sourceAnchor="265.0,0.0" targetAnchor="239.0,162.0" superClass="_SYMrkDE9EemOvvAcGBmHtg" subClass="_SdjFoDE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I50FkDE9EemOvvAcGBmHtg"/>
+    <bendpoints xmi:id="_KYcU0TE_EemOvvAcGBmHtg" sourceY="-53" targetX="472" targetY="57"/>
+    <bendpoints xmi:id="_KYcU0jE_EemOvvAcGBmHtg" sourceX="-472" sourceY="-53" targetY="57"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ScmqcDE9EemOvvAcGBmHtg" sourceAnchor="295.0,0.0" targetAnchor="1030.0,252.0" target="_Sgd2wDE9EemOvvAcGBmHtg" source="_SdjFoDE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9XI0TE9EemOvvAcGBmHtg"/>
+    <bendpoints xmi:id="_KYcU0DE_EemOvvAcGBmHtg" sourceY="-351" targetX="862"/>
+    <stereotypes xmi:id="_SdhQcTE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9Xv4DE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SdgpYDE9EemOvvAcGBmHtg" text="">
+      <visualProperties xmi:id="_TMpAQDE9EemOvvAcGBmHtg" position="-502.6875,2.0000000000002274"/>
+    </nameVisual>
+    <sourceRole xmi:id="_SdgpYTE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9XI0jE9EemOvvAcGBmHtg"/>
+      <visualProperties xmi:id="_TMoZMDE9EemOvvAcGBmHtg" position="2.0,-98.0"/>
+      <visibility xmi:id="_Sdh3gTE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_Sdh3gDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SdhQcDE9EemOvvAcGBmHtg" aggregationKind="NONE" name="path" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7-BsTE9EemOvvAcGBmHtg"/>
+      <visualProperties xmi:id="_TMpnUDE9EemOvvAcGBmHtg" position="51.875,2.0"/>
+      <visibility xmi:id="_Sdh3gzE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_Sdh3gjE9EemOvvAcGBmHtg" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SeuxYDE9EemOvvAcGBmHtg" sourceAnchor="356.0,162.0" targetAnchor="515.0,392.0" target="_Sgd2wDE9EemOvvAcGBmHtg" source="_SI5rUDE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I8vdwDE9EemOvvAcGBmHtg"/>
+    <bendpoints xmi:id="_KYcU1TE_EemOvvAcGBmHtg" sourceY="694" targetX="1630" targetY="480"/>
+    <bendpoints xmi:id="_KYcU1jE_EemOvvAcGBmHtg" sourceX="-1630" sourceY="694" targetY="480"/>
+    <nameVisual xmi:id="_SgYXMDE9EemOvvAcGBmHtg" text="">
+      <visualProperties xmi:id="_TMZIoDE9EemOvvAcGBmHtg" position="68.0,-23.999999999999773"/>
+    </nameVisual>
+    <sourceRole xmi:id="_SgYXMTE9EemOvvAcGBmHtg" aggregationKind="NONE" name="borough" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I8Ad8DE9EemOvvAcGBmHtg"/>
+      <visualProperties xmi:id="_TMXTcDE9EemOvvAcGBmHtg" position="-75.0,58.90909090909099"/>
+      <visibility xmi:id="_SgcBkTE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SgcBkDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SgYXMjE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I8wE0DE9EemOvvAcGBmHtg"/>
+      <visualProperties xmi:id="_TMZIoTE9EemOvvAcGBmHtg" position="2.0,47.99999999999977"/>
+      <visibility xmi:id="_SgcBkzE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SgcBkjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Sj3wEDE9EemOvvAcGBmHtg" targetItem="_Sj8BgzE9EemOvvAcGBmHtg" sourceItem="_SijhcDE9EemOvvAcGBmHtg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Sj6MUDE9EemOvvAcGBmHtg" targetItem="_Sj8BiDE9EemOvvAcGBmHtg" sourceItem="_Sj4-MDE9EemOvvAcGBmHtg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Sj6zYDE9EemOvvAcGBmHtg" targetItem="_Sj8BkDE9EemOvvAcGBmHtg" sourceItem="_Sj6MUTE9EemOvvAcGBmHtg"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Sj7acDE9EemOvvAcGBmHtg" targetItem="_Sj8BmzE9EemOvvAcGBmHtg" sourceItem="_Sj6zYTE9EemOvvAcGBmHtg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Sk98QDE9EemOvvAcGBmHtg" sourceAnchor="449.0,185.0" targetAnchor="0.0,162.0" target="_SPNusDE9EemOvvAcGBmHtg" source="_SoLBSTE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I8_8cDE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_SmkewzE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9AjgDE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SmkewDE9EemOvvAcGBmHtg" text="">
+      <visualProperties xmi:id="_TMq1cDE9EemOvvAcGBmHtg" position="-47.0,-11.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_SmkewTE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I8_8cTE9EemOvvAcGBmHtg"/>
+      <visualProperties xmi:id="_TMqOYDE9EemOvvAcGBmHtg" position="5.0,-67.0"/>
+      <visibility xmi:id="_SmoJITE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SmoJIDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SmkewjE9EemOvvAcGBmHtg" aggregationKind="NONE" name="model" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7LXgDE9EemOvvAcGBmHtg"/>
+      <visualProperties xmi:id="_TMq1cTE9EemOvvAcGBmHtg" position="-64.0,11.0"/>
+      <visibility xmi:id="_SmoJIzE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SmoJIjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SmsakDE9EemOvvAcGBmHtg" source="_SoLBSTE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9AjgTE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_SmsakTE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9BKkDE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SmsakjE9EemOvvAcGBmHtg" text=""/>
+    <sourceRole xmi:id="_SmsakzE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9AjgjE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SmsalDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SmsalTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SmsaljE9EemOvvAcGBmHtg" aggregationKind="NONE" name="resources" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7MloTE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SmsalzE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SmsamDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Sno1wDE9EemOvvAcGBmHtg" source="_SoLBSTE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9BKkTE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_Sno1wTE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9BxoDE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Sno1wjE9EemOvvAcGBmHtg" text=""/>
+    <sourceRole xmi:id="_Sno1wzE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9BKkjE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_Sno1xDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_Sno1xTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Sno1xjE9EemOvvAcGBmHtg" aggregationKind="NONE" name="location" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7NMsjE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_Sno1xzE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_Sno1yDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SoE6oDE9EemOvvAcGBmHtg" source="_SoLBSTE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9BxoTE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_SoE6oTE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9CYsDE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SoE6ojE9EemOvvAcGBmHtg" text=""/>
+    <sourceRole xmi:id="_SoE6ozE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9BxojE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SoE6pDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SoE6pTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SoE6pjE9EemOvvAcGBmHtg" aggregationKind="NONE" name="comboProvider" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7Oa0DE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SoE6pzE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SoE6qDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SoGIwDE9EemOvvAcGBmHtg" source="_SoLBSTE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9CYsTE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_SoGIwTE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9C_wDE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SoGIwjE9EemOvvAcGBmHtg" text=""/>
+    <sourceRole xmi:id="_SoGIwzE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9CYsjE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SoGIxDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SoGIxTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SoGIxjE9EemOvvAcGBmHtg" aggregationKind="NONE" name="txtDistance" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7Q3EDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SoGIxzE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SoGIyDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SoGv0DE9EemOvvAcGBmHtg" source="_SoLBSTE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9C_wTE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_SoGv0TE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9Dm0DE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SoGv0jE9EemOvvAcGBmHtg" text=""/>
+    <sourceRole xmi:id="_SoGv0zE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9C_wjE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SoGv1DE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SoGv1TE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SoGv1jE9EemOvvAcGBmHtg" aggregationKind="NONE" name="sldFailure" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7Q3FDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SoGv1zE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SoGv2DE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SoHW4DE9EemOvvAcGBmHtg" source="_SoLBSTE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9Dm0TE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_SoHW4TE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9EN4DE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SoHW4jE9EemOvvAcGBmHtg" text=""/>
+    <sourceRole xmi:id="_SoHW4zE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9Dm0jE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SoH98DE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SoH98TE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SoH98jE9EemOvvAcGBmHtg" aggregationKind="NONE" name="comboBorough" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7SFMDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SoH98zE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SoH99DE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SoIlADE9EemOvvAcGBmHtg" source="_SoLBSTE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9E08DE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_SoIlATE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9E08jE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SoIlAjE9EemOvvAcGBmHtg" text=""/>
+    <sourceRole xmi:id="_SoIlAzE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9E08TE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SoIlBDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SoIlBTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SoIlBjE9EemOvvAcGBmHtg" aggregationKind="NONE" name="checkAllBorough" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7TTVDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SoIlBzE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SoIlCDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SoJMEDE9EemOvvAcGBmHtg" source="_SoLBSTE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9FcADE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_SoJMETE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9GDEDE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SoJMEjE9EemOvvAcGBmHtg" text=""/>
+    <sourceRole xmi:id="_SoJMEzE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9FcATE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SoJMFDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SoJMFTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SoJMFjE9EemOvvAcGBmHtg" aggregationKind="NONE" name="checkApproximate" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7UhcjE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SoJMFzE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SoJMGDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SoKaMDE9EemOvvAcGBmHtg" source="_SoLBSTE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9GDETE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_SoKaMTE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9GqIDE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SoKaMjE9EemOvvAcGBmHtg" text=""/>
+    <sourceRole xmi:id="_SoKaMzE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9GDEjE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SoKaNDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SoKaNTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SoKaNjE9EemOvvAcGBmHtg" aggregationKind="NONE" name="btnResearch" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7WWoDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SoKaNzE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SoKaODE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SoLBQDE9EemOvvAcGBmHtg" source="_SoLBSTE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9GqITE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_SoLBQTE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9HRMDE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SoLBQjE9EemOvvAcGBmHtg" text=""/>
+    <sourceRole xmi:id="_SoLBQzE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9GqIjE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SoLBRDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SoLBRTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SoLBRjE9EemOvvAcGBmHtg" aggregationKind="NONE" name="labelinfo" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7WWpDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SoLBRzE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SoLBSDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Srn94DE9EemOvvAcGBmHtg" sourceAnchor="186.0,0.0" targetAnchor="404.0,324.0" target="_SPNusDE9EemOvvAcGBmHtg" source="_SuEN4DE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9HRMTE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_SsSsQzE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9H4QDE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SsSsQDE9EemOvvAcGBmHtg" text="">
+      <visualProperties xmi:id="_TMsqoDE9EemOvvAcGBmHtg" position="41.0,8.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_SsSsQTE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9HRMjE9EemOvvAcGBmHtg"/>
+      <visualProperties xmi:id="_TMsDkDE9EemOvvAcGBmHtg" position="2.0,-58.0"/>
+      <visibility xmi:id="_SttBgTE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SttBgDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SsSsQjE9EemOvvAcGBmHtg" aggregationKind="NONE" name="model" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7Yy4DE9EemOvvAcGBmHtg"/>
+      <visualProperties xmi:id="_TMsqoTE9EemOvvAcGBmHtg" position="-61.0,2.0"/>
+      <visibility xmi:id="_SttBgzE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SttBgjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SsSsRDE9EemOvvAcGBmHtg" source="_SuEN4DE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9H4QTE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_SttokTE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9IfUDE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SttBhTE9EemOvvAcGBmHtg" text=""/>
+    <sourceRole xmi:id="_SttBhjE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9H4QjE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_Stx6ATE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_Stx6ADE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SttokDE9EemOvvAcGBmHtg" aggregationKind="NONE" name="resources" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7Yy4jE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_StyhETE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_StyhEDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_StF9gDE9EemOvvAcGBmHtg" source="_SuEN4DE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9IfUTE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_StuPoTE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9JGYDE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SttokjE9EemOvvAcGBmHtg" text=""/>
+    <sourceRole xmi:id="_SttokzE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9IfUjE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_StzIIjE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_StzIITE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_StuPoDE9EemOvvAcGBmHtg" aggregationKind="NONE" name="location" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7aBAzE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_StzIJDE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_StzIIzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_StHysDE9EemOvvAcGBmHtg" source="_SuEN4DE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9N-4TE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_StuPpTE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9PNADE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_StuPojE9EemOvvAcGBmHtg" text=""/>
+    <sourceRole xmi:id="_StuPozE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9N-4jE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_StzvMzE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_StzvMjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_StuPpDE9EemOvvAcGBmHtg" aggregationKind="NONE" name="backButton" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7mOQzE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_St0WQTE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_St0WQDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Stm64DE9EemOvvAcGBmHtg" source="_SuEN4DE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9PNATE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_Stu2sjE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9P0EDE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_StuPpjE9EemOvvAcGBmHtg" text=""/>
+    <sourceRole xmi:id="_Stu2sDE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9PNAjE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_St09UzE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_St09UjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Stu2sTE9EemOvvAcGBmHtg" aggregationKind="NONE" name="labelinfo" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7ncYjE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_St09VTE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_St09VDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Stm64TE9EemOvvAcGBmHtg" source="_SuEN4DE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9P0ETE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_StvdwDE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9QbIDE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Stu2szE9EemOvvAcGBmHtg" text=""/>
+    <sourceRole xmi:id="_Stu2tDE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9P0EjE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_St09WTE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_St09WDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Stu2tTE9EemOvvAcGBmHtg" aggregationKind="NONE" name="labelinfo2" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7oDcjE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_St09WzE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_St09WjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_St7D8DE9EemOvvAcGBmHtg" source="_SuEN4DE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9JtcDE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_St7D8TE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9JtcjE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_St7D8jE9EemOvvAcGBmHtg" text=""/>
+    <sourceRole xmi:id="_St7D8zE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9JtcTE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_St7D9DE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_St7D9TE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_St7D9jE9EemOvvAcGBmHtg" aggregationKind="NONE" name="tableView" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7aoEzE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_St7D9zE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_St7D-DE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_St85IDE9EemOvvAcGBmHtg" source="_SuEN4DE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9KUgDE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_St85ITE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9K7kDE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_St85IjE9EemOvvAcGBmHtg" text=""/>
+    <sourceRole xmi:id="_St85IzE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9KUgTE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_St85JDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_St85JTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_St85JjE9EemOvvAcGBmHtg" aggregationKind="NONE" name="numareaColumn" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7cdQjE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_St85JzE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_St85KDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_St-HQDE9EemOvvAcGBmHtg" source="_SuEN4DE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9K7kTE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_St-HQTE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9LioDE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_St-HQjE9EemOvvAcGBmHtg" text=""/>
+    <sourceRole xmi:id="_St-HQzE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9K7kjE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_St-HRDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_St-HRTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_St-HRjE9EemOvvAcGBmHtg" aggregationKind="NONE" name="locationColumn" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7eScjE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_St-HRzE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_St-HSDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_St_VYDE9EemOvvAcGBmHtg" source="_SuEN4DE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9LioTE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_St_VYTE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9MJsDE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_St_VYjE9EemOvvAcGBmHtg" text=""/>
+    <sourceRole xmi:id="_St_VYzE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9LiojE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_St_VZDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_St_VZTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_St_VZjE9EemOvvAcGBmHtg" aggregationKind="NONE" name="streetColumn" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7gHoDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_St_VZzE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_St_VaDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SuAjgDE9EemOvvAcGBmHtg" source="_SuEN4DE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9MJsTE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_SuAjgTE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9MwwDE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SuAjgjE9EemOvvAcGBmHtg" text=""/>
+    <sourceRole xmi:id="_SuAjgzE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9MJsjE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SuAjhDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SuAjhTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SuAjhjE9EemOvvAcGBmHtg" aggregationKind="NONE" name="cityColumn" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7hVwzE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SuAjhzE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SuAjiDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SuBxoDE9EemOvvAcGBmHtg" source="_SuEN4DE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9MwwTE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_SuBxoTE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9NX0DE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SuBxojE9EemOvvAcGBmHtg" text=""/>
+    <sourceRole xmi:id="_SuBxozE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9MwwjE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SuBxpDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SuBxpTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SuBxpjE9EemOvvAcGBmHtg" aggregationKind="NONE" name="SSIDColumn" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7jK8jE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SuBxpzE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SuBxqDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SuDm0DE9EemOvvAcGBmHtg" source="_SuEN4DE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I9NX0TE9EemOvvAcGBmHtg"/>
+    <stereotypes xmi:id="_SuDm0TE9EemOvvAcGBmHtg" name="Reference">
+      <modelElement href="Tesi_HotspotNY.uml#_I9N-4DE9EemOvvAcGBmHtg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SuDm0jE9EemOvvAcGBmHtg" text=""/>
+    <sourceRole xmi:id="_SuDm0zE9EemOvvAcGBmHtg" aggregationKind="NONE" name="">
+      <modelElement href="Tesi_HotspotNY.uml#_I9NX0jE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SuDm1DE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SuDm1TE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SuDm1jE9EemOvvAcGBmHtg" aggregationKind="NONE" name="infoColumn" navigable="true">
+      <modelElement href="Tesi_HotspotNY.uml#_I7lAIDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SuDm1zE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SuDm2DE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_SOtYYDE9EemOvvAcGBmHtg" sourceConnectionVisual="_SPBhcDE9EemOvvAcGBmHtg" text="Componenti connesse del grafo" item="_SPNu2DE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I8tokjE9EemOvvAcGBmHtg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_SPCvkDE9EemOvvAcGBmHtg" sourceConnectionVisual="_SPDWoDE9EemOvvAcGBmHtg" text="Esegue il TSP su ogni componente connessa e da il risulato come lista&#xD;&#xA;&#x9; * @param approximate&#xD;&#xA;&#x9; * @return" item="_SPNu3jE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I8tolTE9EemOvvAcGBmHtg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_SPD9sDE9EemOvvAcGBmHtg" sourceConnectionVisual="_SPD9sTE9EemOvvAcGBmHtg" text="Popola il grafo (vertici hotspot; archi tra distanze che rappresentano il peso) attraverso un metodo DAO&#xD;&#xA;&#x9; * @param provider&#xD;&#xA;&#x9; * @param borough&#xD;&#xA;&#x9; * @param maxDist&#xD;&#xA;&#x9; * @param failure&#xD;&#xA;&#x9; * @param allIsSelected" item="_SPNu5jE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I8tBgTE9EemOvvAcGBmHtg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_SPEkwDE9EemOvvAcGBmHtg" sourceConnectionVisual="_SPEkwTE9EemOvvAcGBmHtg" text="Utility method per calcolare la distanza &#xD;&#xA;&#x9; * @param h1&#xD;&#xA;&#x9; * @param h2&#xD;&#xA;&#x9; * @return distance" item="_SPNu-DE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I8tokDE9EemOvvAcGBmHtg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_SPFy4DE9EemOvvAcGBmHtg" sourceConnectionVisual="_SPFy4TE9EemOvvAcGBmHtg" text="Utility method per ottenere una lista di dimensione random di hotspot (vertici) guasti&#xD;&#xA;&#x9; * @param allVertex&#xD;&#xA;&#x9; * @param failure&#xD;&#xA;&#x9; * @return" item="_SPNvAzE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I8tokTE9EemOvvAcGBmHtg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_SPGZ8DE9EemOvvAcGBmHtg" sourceConnectionVisual="_SPGZ8TE9EemOvvAcGBmHtg" text="Esegue la schedulazione su singola componente connessa attraverso l'algoritmo TSP&#xD;&#xA;&#x9; * @param compconn componente connessa&#xD;&#xA;&#x9; * @return path" item="_SPNvDjE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I8tokzE9EemOvvAcGBmHtg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_SPHBADE9EemOvvAcGBmHtg" sourceConnectionVisual="_SPHBATE9EemOvvAcGBmHtg" text="Esegue la schedulazione approssimata su singola componente connessa&#xD;&#xA;&#x9; * @param compconn componente connessa&#xD;&#xA;&#x9; * @return path" item="_SPOVxTE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I8tolDE9EemOvvAcGBmHtg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_SWCIYDE9EemOvvAcGBmHtg" sourceConnectionVisual="_SWCvcDE9EemOvvAcGBmHtg" text="Funzione ricorsiva: prova tutti i possibili insiemi di hotspots e sceglie il migliore&#xD;&#xA;&#x9; * &#xD;&#xA;&#x9; * @param parziale&#xD;&#xA;&#x9; * @param step" item="_SWHoLjE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I8uPoDE9EemOvvAcGBmHtg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_SWDWgDE9EemOvvAcGBmHtg" sourceConnectionVisual="_SWDWgTE9EemOvvAcGBmHtg" text="Utility method per calcolare il peso della collezione&#xD;&#xA;&#x9; * @param parziale&#xD;&#xA;&#x9; * @return peso" item="_SWHoOTE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I8uPoTE9EemOvvAcGBmHtg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_SijhcDE9EemOvvAcGBmHtg" sourceConnectionVisual="_Sj3wEDE9EemOvvAcGBmHtg" text="Metodo per caricare tutti i providers dal db&#xD;&#xA;&#x9; * @return List&lt;Provider>" item="_Sj8BgzE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I8sacDE9EemOvvAcGBmHtg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Sj4-MDE9EemOvvAcGBmHtg" sourceConnectionVisual="_Sj6MUDE9EemOvvAcGBmHtg" text="Metodo per caricare tutti i dati relativi ai distretti &#xD;&#xA;&#x9; * @return List of Borough" item="_Sj8BiDE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I8sacTE9EemOvvAcGBmHtg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Sj6MUTE9EemOvvAcGBmHtg" sourceConnectionVisual="_Sj6zYDE9EemOvvAcGBmHtg" text="Metodo per trovare i vertici del grafo, dai parametri impostati dall'utente&#xD;&#xA;&#x9; * @param &#xD;&#xA;&#x9; * @param&#xD;&#xA;&#x9; * @return List of Hotspot" item="_Sj8BkDE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I8sacjE9EemOvvAcGBmHtg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Sj6zYTE9EemOvvAcGBmHtg" sourceConnectionVisual="_Sj7acDE9EemOvvAcGBmHtg" text="Metodo per caricare tutti i vertici su tutta la citta'&#xD;&#xA;&#x9; * @param provider&#xD;&#xA;&#x9; * @param bmap&#xD;&#xA;&#x9; * @return" item="_Sj8BmzE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_I8tBgDE9EemOvvAcGBmHtg"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_SLcpADE9EemOvvAcGBmHtg" name="BoroughIdMap" associationsIn="_SN11sDE9EemOvvAcGBmHtg" associationsOut="_SKwsgDE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_IxJ40DE9EemOvvAcGBmHtg"/>
+    <visualProperties xmi:id="_SLcpATE9EemOvvAcGBmHtg" position="2869.0,547.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_SLcpAjE9EemOvvAcGBmHtg" label="+"/>
+    <attributes xmi:id="_SLcpAzE9EemOvvAcGBmHtg" name="map">
+      <modelElement href="Tesi_HotspotNY.uml#_I7sU4TE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SLcpBDE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7tjADE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SLcpBTE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SLcpBjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SLcpBzE9EemOvvAcGBmHtg" name="Borough">
+        <modelElement href="Tesi_HotspotNY.uml#_IxEZQDE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_SLcpCDE9EemOvvAcGBmHtg" name="BoroughIdMap">
+      <modelElement href="Tesi_HotspotNY.uml#_IxLG8DE9EemOvvAcGBmHtg"/>
+      <keywords xmi:id="_SLcpCTE9EemOvvAcGBmHtg" keyword="create"/>
+      <visibility xmi:id="_SLcpCjE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SLcpCzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SLcpDDE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_IxLuAjE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SLcpDTE9EemOvvAcGBmHtg" name="BoroughIdMap">
+          <modelElement href="Tesi_HotspotNY.uml#_IxJ40DE9EemOvvAcGBmHtg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_SLcpDjE9EemOvvAcGBmHtg" name="get">
+      <modelElement href="Tesi_HotspotNY.uml#_IxMVEDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SLcpDzE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SLcpEDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SLcpETE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_I5R6EDE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SLcpEjE9EemOvvAcGBmHtg" name="Borough">
+          <modelElement href="Tesi_HotspotNY.uml#_IxEZQDE9EemOvvAcGBmHtg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_SLcpEzE9EemOvvAcGBmHtg" name="sigla">
+        <modelElement href="Tesi_HotspotNY.uml#_IxMVETE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SLcpFDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SLcpFTE9EemOvvAcGBmHtg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SLcpFjE9EemOvvAcGBmHtg" name="get">
+      <modelElement href="Tesi_HotspotNY.uml#_I5Qr8DE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SLcpFzE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SLcpGDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SLcpGTE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_I5RTATE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SLcpGjE9EemOvvAcGBmHtg" name="Borough">
+          <modelElement href="Tesi_HotspotNY.uml#_IxEZQDE9EemOvvAcGBmHtg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_SLcpGzE9EemOvvAcGBmHtg" name="b">
+        <modelElement href="Tesi_HotspotNY.uml#_I5RTADE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SLcpHDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SLcpHTE9EemOvvAcGBmHtg" name="Borough">
+          <modelElement href="Tesi_HotspotNY.uml#_IxEZQDE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_SoLBSTE9EemOvvAcGBmHtg" name="HNYController" associationsOut="_Sk98QDE9EemOvvAcGBmHtg _SmsakDE9EemOvvAcGBmHtg _Sno1wDE9EemOvvAcGBmHtg _SoE6oDE9EemOvvAcGBmHtg _SoGIwDE9EemOvvAcGBmHtg _SoGv0DE9EemOvvAcGBmHtg _SoHW4DE9EemOvvAcGBmHtg _SoIlADE9EemOvvAcGBmHtg _SoJMEDE9EemOvvAcGBmHtg _SoKaMDE9EemOvvAcGBmHtg _SoLBQDE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_Ivym4DE9EemOvvAcGBmHtg"/>
+    <visualProperties xmi:id="_SoLBSjE9EemOvvAcGBmHtg" position="1163.0,417.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_SoLBSzE9EemOvvAcGBmHtg" label="+"/>
+    <attributes xmi:id="_SoLBTDE9EemOvvAcGBmHtg" name="model">
+      <modelElement href="Tesi_HotspotNY.uml#_I7LXgDE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SoLBTTE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7MloDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SoLBTjE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SoLBTzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SoLBUDE9EemOvvAcGBmHtg" name="Model">
+        <modelElement href="Tesi_HotspotNY.uml#_IxWtIDE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SoLBUTE9EemOvvAcGBmHtg" name="resources">
+      <modelElement href="Tesi_HotspotNY.uml#_I7MloTE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SoLBUjE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7MlojE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SoLBUzE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_I7NMsDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SoLBVDE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SoLBVTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SoLBVjE9EemOvvAcGBmHtg" name="ResourceBundle">
+        <modelElement href="Tesi_HotspotNY.uml#_I4WF8DE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SoLBVzE9EemOvvAcGBmHtg" name="location">
+      <modelElement href="Tesi_HotspotNY.uml#_I7NMsjE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SoLBWDE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7NzwDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SoLBWTE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_I7NzwTE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SoLBWjE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SoLBWzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SoLBXDE9EemOvvAcGBmHtg" name="URL">
+        <modelElement href="Tesi_HotspotNY.uml#_I4UQwDE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SoLBXTE9EemOvvAcGBmHtg" name="comboProvider">
+      <modelElement href="Tesi_HotspotNY.uml#_I7Oa0DE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SoLBXjE9EemOvvAcGBmHtg" name="Generics">
+        <modelElement href="Tesi_HotspotNY.uml#_I7PB4DE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SoLBXzE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7Po8DE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SoLBYDE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_I7Po8TE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SoLBYTE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SoLBYjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SoLBYzE9EemOvvAcGBmHtg" name="ComboBox">
+        <modelElement href="Tesi_HotspotNY.uml#_I4geATE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SoLBZDE9EemOvvAcGBmHtg" name="txtDistance">
+      <modelElement href="Tesi_HotspotNY.uml#_I7Q3EDE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SoLBZTE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7Q3ETE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SoLBZjE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_I7Q3EjE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SoLBZzE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SoLBaDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SoLBaTE9EemOvvAcGBmHtg" name="TextField">
+        <modelElement href="Tesi_HotspotNY.uml#_I4kIYTE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SoLBajE9EemOvvAcGBmHtg" name="sldFailure">
+      <modelElement href="Tesi_HotspotNY.uml#_I7Q3FDE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SoLBazE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7ReIDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SoLBbDE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_I7ReITE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SoLBbTE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SoLBbjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SoLBbzE9EemOvvAcGBmHtg" name="Slider">
+        <modelElement href="Tesi_HotspotNY.uml#_I4i6QDE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SoLBcDE9EemOvvAcGBmHtg" name="comboBorough">
+      <modelElement href="Tesi_HotspotNY.uml#_I7SFMDE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SoLBcTE9EemOvvAcGBmHtg" name="Generics">
+        <modelElement href="Tesi_HotspotNY.uml#_I7TTUDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SoLBcjE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7TTUTE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SoLBczE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_I7TTUjE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SoLBdDE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SoLBdTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SoLBdjE9EemOvvAcGBmHtg" name="ComboBox">
+        <modelElement href="Tesi_HotspotNY.uml#_I4geATE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SoLBdzE9EemOvvAcGBmHtg" name="checkAllBorough">
+      <modelElement href="Tesi_HotspotNY.uml#_I7TTVDE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SoLBeDE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7T6YDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SoLBeTE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_I7UhcDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SoLBejE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SoLBezE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SoLBfDE9EemOvvAcGBmHtg" name="CheckBox">
+        <modelElement href="Tesi_HotspotNY.uml#_I4eo0TE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SoLBfTE9EemOvvAcGBmHtg" name="checkApproximate">
+      <modelElement href="Tesi_HotspotNY.uml#_I7UhcjE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SoLBfjE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7VIgDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SoLBfzE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_I7VIgTE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SoLBgDE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SoLBgTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SoLBgjE9EemOvvAcGBmHtg" name="CheckBox">
+        <modelElement href="Tesi_HotspotNY.uml#_I4eo0TE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SoLBgzE9EemOvvAcGBmHtg" name="btnResearch">
+      <modelElement href="Tesi_HotspotNY.uml#_I7WWoDE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SoLBhDE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7WWoTE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SoLBhTE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_I7WWojE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SoLBhjE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SoLBhzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SoLBiDE9EemOvvAcGBmHtg" name="Button">
+        <modelElement href="Tesi_HotspotNY.uml#_I4dasTE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SoLBiTE9EemOvvAcGBmHtg" name="labelinfo">
+      <modelElement href="Tesi_HotspotNY.uml#_I7WWpDE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SoLBijE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7XkwDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SoLBizE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_I7XkwTE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SoLBjDE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SoLBjTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SoLBjjE9EemOvvAcGBmHtg" name="Label">
+        <modelElement href="Tesi_HotspotNY.uml#_I4hsIDE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_SoLBjzE9EemOvvAcGBmHtg" name="initialize">
+      <modelElement href="Tesi_HotspotNY.uml#_IwDFkDE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SoLBkDE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_IwGI4DE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SoLBkTE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_IwH-EDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SoLBkjE9EemOvvAcGBmHtg" label="~"/>
+      <cardinality xmi:id="_SoLBkzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_SoLBlDE9EemOvvAcGBmHtg" name="setModel">
+      <modelElement href="Tesi_HotspotNY.uml#_I4pA4DE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SoLBlTE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SoLBljE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_SoLBlzE9EemOvvAcGBmHtg" name="model">
+        <modelElement href="Tesi_HotspotNY.uml#_I4pA4TE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SoLBmDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SoLBmTE9EemOvvAcGBmHtg" name="Model">
+          <modelElement href="Tesi_HotspotNY.uml#_IxWtIDE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SoLBmjE9EemOvvAcGBmHtg" name="doSchedule">
+      <modelElement href="Tesi_HotspotNY.uml#_I6ZUYDE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SoLBmzE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I6aigDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SoLBnDE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_I6bwoDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SoLBnTE9EemOvvAcGBmHtg" label="~"/>
+      <cardinality xmi:id="_SoLBnjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_SoLBnzE9EemOvvAcGBmHtg" name="event">
+        <modelElement href="Tesi_HotspotNY.uml#_I6ZUYTE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SoLBoDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SoLBoTE9EemOvvAcGBmHtg" name="ActionEvent">
+          <modelElement href="Tesi_HotspotNY.uml#_I4XUETE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SoLBojE9EemOvvAcGBmHtg" name="changeScene">
+      <modelElement href="Tesi_HotspotNY.uml#_I6cXsDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SoLBozE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SoLBpDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_SoLBpTE9EemOvvAcGBmHtg" name="event">
+        <modelElement href="Tesi_HotspotNY.uml#_I6cXsTE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SoLBpjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SoLBpzE9EemOvvAcGBmHtg" name="ActionEvent">
+          <modelElement href="Tesi_HotspotNY.uml#_I4XUETE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_SoLBqDE9EemOvvAcGBmHtg" name="approximate">
+        <modelElement href="Tesi_HotspotNY.uml#_I6cXsjE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SoLBqTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SoLBqjE9EemOvvAcGBmHtg" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_SQycATE9EemOvvAcGBmHtg" name="Provider" associationsOut="_SQF4cDE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_IxpBADE9EemOvvAcGBmHtg"/>
+    <visualProperties xmi:id="_SQycAjE9EemOvvAcGBmHtg" position="1048.0,845.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_SQycAzE9EemOvvAcGBmHtg" label="+"/>
+    <attributes xmi:id="_SQycBDE9EemOvvAcGBmHtg" name="name">
+      <modelElement href="Tesi_HotspotNY.uml#_I7zpoDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SQycBTE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SQycBjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SQycBzE9EemOvvAcGBmHtg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_SQycCDE9EemOvvAcGBmHtg" name="Provider">
+      <modelElement href="Tesi_HotspotNY.uml#_IxqPIDE9EemOvvAcGBmHtg"/>
+      <keywords xmi:id="_SQycCTE9EemOvvAcGBmHtg" keyword="create"/>
+      <visibility xmi:id="_SQycCjE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SQycCzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SQycDDE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_Ixq2MjE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SQycDTE9EemOvvAcGBmHtg" name="Provider">
+          <modelElement href="Tesi_HotspotNY.uml#_IxpBADE9EemOvvAcGBmHtg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_SQycDjE9EemOvvAcGBmHtg" name="name">
+        <modelElement href="Tesi_HotspotNY.uml#_IxqPITE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SQycDzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SQycEDE9EemOvvAcGBmHtg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SQycETE9EemOvvAcGBmHtg" name="toString">
+      <modelElement href="Tesi_HotspotNY.uml#_IxrdQDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SQycEjE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SQycEzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SQycFDE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_IxrdQTE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SQycFTE9EemOvvAcGBmHtg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Sj8BgDE9EemOvvAcGBmHtg" name="HotspotDAO" associationsIn="_SPMgkDE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_Iw4MADE9EemOvvAcGBmHtg"/>
+    <visualProperties xmi:id="_Sj8BgTE9EemOvvAcGBmHtg" position="1969.0,259.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Sj8BgjE9EemOvvAcGBmHtg" label="+"/>
+    <operations xmi:id="_Sj8BgzE9EemOvvAcGBmHtg" comments="_SijhcDE9EemOvvAcGBmHtg" targetConnectionVisual="_Sj3wEDE9EemOvvAcGBmHtg" name="getAllProviders">
+      <modelElement href="Tesi_HotspotNY.uml#_Iw5aIDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_Sj8BhDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_Sj8BhTE9EemOvvAcGBmHtg" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_Sj8BhjE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_Iw6BMDE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_Sj8BhzE9EemOvvAcGBmHtg" name="Provider">
+          <modelElement href="Tesi_HotspotNY.uml#_IxpBADE9EemOvvAcGBmHtg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Sj8BiDE9EemOvvAcGBmHtg" comments="_Sj4-MDE9EemOvvAcGBmHtg" targetConnectionVisual="_Sj6MUDE9EemOvvAcGBmHtg" name="getAllBoroughs">
+      <modelElement href="Tesi_HotspotNY.uml#_I5KlUDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_Sj8BiTE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_Sj8BijE9EemOvvAcGBmHtg" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_Sj8BizE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_I5LMYDE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_Sj8BjDE9EemOvvAcGBmHtg" name="Borough">
+          <modelElement href="Tesi_HotspotNY.uml#_IxEZQDE9EemOvvAcGBmHtg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Sj8BjTE9EemOvvAcGBmHtg" name="bmap">
+        <modelElement href="Tesi_HotspotNY.uml#_I5KlUTE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_Sj8BjjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_Sj8BjzE9EemOvvAcGBmHtg" name="BoroughIdMap">
+          <modelElement href="Tesi_HotspotNY.uml#_IxJ40DE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Sj8BkDE9EemOvvAcGBmHtg" comments="_Sj6MUTE9EemOvvAcGBmHtg" targetConnectionVisual="_Sj6zYDE9EemOvvAcGBmHtg" name="getVertex">
+      <modelElement href="Tesi_HotspotNY.uml#_I5LzcDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_Sj8BkTE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_Sj8BkjE9EemOvvAcGBmHtg" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_Sj8BkzE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_I5LzczE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_Sj8BlDE9EemOvvAcGBmHtg" name="Hotspot">
+          <modelElement href="Tesi_HotspotNY.uml#_IyTvYDE9EemOvvAcGBmHtg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Sj8BlTE9EemOvvAcGBmHtg" name="provider">
+        <modelElement href="Tesi_HotspotNY.uml#_I5LzcTE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_Sj8BljE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_Sj8BlzE9EemOvvAcGBmHtg" name="Provider">
+          <modelElement href="Tesi_HotspotNY.uml#_IxpBADE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Sj8BmDE9EemOvvAcGBmHtg" name="borough">
+        <modelElement href="Tesi_HotspotNY.uml#_I5LzcjE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_Sj8BmTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_Sj8BmjE9EemOvvAcGBmHtg" name="Borough">
+          <modelElement href="Tesi_HotspotNY.uml#_IxEZQDE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Sj8BmzE9EemOvvAcGBmHtg" comments="_Sj6zYTE9EemOvvAcGBmHtg" targetConnectionVisual="_Sj7acDE9EemOvvAcGBmHtg" name="getAllVertex">
+      <modelElement href="Tesi_HotspotNY.uml#_I5NBkDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_Sj8BnDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_Sj8BnTE9EemOvvAcGBmHtg" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_Sj8BnjE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_I5NBkzE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_Sj8BnzE9EemOvvAcGBmHtg" name="Hotspot">
+          <modelElement href="Tesi_HotspotNY.uml#_IyTvYDE9EemOvvAcGBmHtg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Sj8BoDE9EemOvvAcGBmHtg" name="provider">
+        <modelElement href="Tesi_HotspotNY.uml#_I5NBkTE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_Sj8BoTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_Sj8BojE9EemOvvAcGBmHtg" name="Provider">
+          <modelElement href="Tesi_HotspotNY.uml#_IxpBADE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Sj8BozE9EemOvvAcGBmHtg" name="bmap">
+        <modelElement href="Tesi_HotspotNY.uml#_I5NBkjE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_Sj8BpDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_Sj8BpTE9EemOvvAcGBmHtg" name="BoroughIdMap">
+          <modelElement href="Tesi_HotspotNY.uml#_IxJ40DE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_SYMrkDE9EemOvvAcGBmHtg" name="TSPAlgorithms" abstractClass="true" associationsOut="_SYF94DE9EemOvvAcGBmHtg _SYF94TE9EemOvvAcGBmHtg" subclassedBy="_SW8uYDE9EemOvvAcGBmHtg _SbTp8DE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_Ix-YMDE9EemOvvAcGBmHtg"/>
+    <visualProperties xmi:id="_SYMrkTE9EemOvvAcGBmHtg" position="2099.0,1334.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_SYMrkjE9EemOvvAcGBmHtg" label="+"/>
+    <attributes xmi:id="_SYMrkzE9EemOvvAcGBmHtg" name="graph">
+      <modelElement href="Tesi_HotspotNY.uml#_I78MgDE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SYMrlDE9EemOvvAcGBmHtg" name="Generics">
+        <modelElement href="Tesi_HotspotNY.uml#_I78zkDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SYMrlTE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I78zkTE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SYMrljE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SYMrlzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SYMrmDE9EemOvvAcGBmHtg" name="Graph">
+        <modelElement href="Tesi_HotspotNY.uml#_I5WykTE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SYMrmTE9EemOvvAcGBmHtg" name="compconn">
+      <modelElement href="Tesi_HotspotNY.uml#_I79aoDE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SYMrmjE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7-BsDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SYMrmzE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SYMrnDE9EemOvvAcGBmHtg" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_SYMrnTE9EemOvvAcGBmHtg" name="Hotspot">
+        <modelElement href="Tesi_HotspotNY.uml#_IyTvYDE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_SYMrnjE9EemOvvAcGBmHtg" abstractOperation="true" name="solve">
+      <modelElement href="Tesi_HotspotNY.uml#_IyANYDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SYMrnzE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SYMroDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_SYMroTE9EemOvvAcGBmHtg" abstractOperation="true" name="getSolution">
+      <modelElement href="Tesi_HotspotNY.uml#_IyA0cDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SYMrojE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SYMrozE9EemOvvAcGBmHtg" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_SYMrpDE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_IyA0cTE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SYMrpTE9EemOvvAcGBmHtg" name="Hotspot">
+          <modelElement href="Tesi_HotspotNY.uml#_IyTvYDE9EemOvvAcGBmHtg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_SYMrpjE9EemOvvAcGBmHtg" abstractOperation="true" name="getBestWeight">
+      <modelElement href="Tesi_HotspotNY.uml#_IyCCkDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SYMrpzE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SYMrqDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SYMrqTE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_IyCCkTE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SYMrqjE9EemOvvAcGBmHtg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_SYMrqzE9EemOvvAcGBmHtg" name="TSPAlgorithms">
+      <modelElement href="Tesi_HotspotNY.uml#_I69VEDE9EemOvvAcGBmHtg"/>
+      <keywords xmi:id="_SYMrrDE9EemOvvAcGBmHtg" keyword="create"/>
+      <visibility xmi:id="_SYMrrTE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SYMrrjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SYMrrzE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_I698ITE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SYMrsDE9EemOvvAcGBmHtg" name="TSPAlgorithms">
+          <modelElement href="Tesi_HotspotNY.uml#_Ix-YMDE9EemOvvAcGBmHtg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_SYMrsTE9EemOvvAcGBmHtg" name="graph">
+        <modelElement href="Tesi_HotspotNY.uml#_I69VETE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SYMrsjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SYMrszE9EemOvvAcGBmHtg" name="Graph">
+          <modelElement href="Tesi_HotspotNY.uml#_I5WykTE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_SYMrtDE9EemOvvAcGBmHtg" name="compconn">
+        <modelElement href="Tesi_HotspotNY.uml#_I69VEjE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SYMrtTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SYMrtjE9EemOvvAcGBmHtg" name="Set">
+          <modelElement href="Tesi_HotspotNY.uml#_I5WLgTE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_SdjFoDE9EemOvvAcGBmHtg" name="TSPApproximation" associationsOut="_ScmqcDE9EemOvvAcGBmHtg" generalizations="_SbTp8DE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_IyFs8DE9EemOvvAcGBmHtg"/>
+    <visualProperties xmi:id="_SdjFoTE9EemOvvAcGBmHtg" position="2545.0,1606.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_SdjFojE9EemOvvAcGBmHtg" label="+"/>
+    <attributes xmi:id="_SdjFozE9EemOvvAcGBmHtg" name="path">
+      <modelElement href="Tesi_HotspotNY.uml#_I7-BsTE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SdjFpDE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7-owDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SdjFpTE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SdjFpjE9EemOvvAcGBmHtg" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_SdjFpzE9EemOvvAcGBmHtg" name="Hotspot">
+        <modelElement href="Tesi_HotspotNY.uml#_IyTvYDE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SdjFqDE9EemOvvAcGBmHtg" name="tourWeight">
+      <modelElement href="Tesi_HotspotNY.uml#_I7-owTE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SdjFqTE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7_P0DE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SdjFqjE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SdjFqzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SdjFrDE9EemOvvAcGBmHtg" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_SdjFrTE9EemOvvAcGBmHtg" name="solve">
+      <modelElement href="Tesi_HotspotNY.uml#_IyIJMDE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SdjFrjE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_IyIwQDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SdjFrzE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_IyJXUDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SdjFsDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SdjFsTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_SdjFsjE9EemOvvAcGBmHtg" name="getPath">
+      <modelElement href="Tesi_HotspotNY.uml#_IyJ-YDE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SdjFszE9EemOvvAcGBmHtg" name="Generics">
+        <modelElement href="Tesi_HotspotNY.uml#_IyMaoDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SdjFtDE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SdjFtTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SdjFtjE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_I7BmgTE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SdjFtzE9EemOvvAcGBmHtg" name="GraphPath">
+          <modelElement href="Tesi_HotspotNY.uml#_I5umATE9EemOvvAcGBmHtg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_SdjFuDE9EemOvvAcGBmHtg" name="getSolution">
+      <modelElement href="Tesi_HotspotNY.uml#_IyMaoTE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SdjFuTE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_IyNowDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SdjFujE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_IyO24DE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SdjFuzE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SdjFvDE9EemOvvAcGBmHtg" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_SdjFvTE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_IyNBsDE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SdjFvjE9EemOvvAcGBmHtg" name="Hotspot">
+          <modelElement href="Tesi_HotspotNY.uml#_IyTvYDE9EemOvvAcGBmHtg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_SdjFvzE9EemOvvAcGBmHtg" name="getBestWeight">
+      <modelElement href="Tesi_HotspotNY.uml#_IyO24jE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SdjFwDE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_IyQFADE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SdjFwTE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_IyQsEDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SdjFwjE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SdjFwzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SdjFxDE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_IyPd8DE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SdjFxTE9EemOvvAcGBmHtg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_SdjFxjE9EemOvvAcGBmHtg" name="TSPApproximation">
+      <modelElement href="Tesi_HotspotNY.uml#_I6_xUDE9EemOvvAcGBmHtg"/>
+      <keywords xmi:id="_SdjFxzE9EemOvvAcGBmHtg" keyword="create"/>
+      <visibility xmi:id="_SdjFyDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SdjFyTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SdjFyjE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_I6_xVTE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SdjFyzE9EemOvvAcGBmHtg" name="TSPApproximation">
+          <modelElement href="Tesi_HotspotNY.uml#_IyFs8DE9EemOvvAcGBmHtg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_SdjFzDE9EemOvvAcGBmHtg" name="graph">
+        <modelElement href="Tesi_HotspotNY.uml#_I6_xUTE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SdjFzTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SdjFzjE9EemOvvAcGBmHtg" name="Graph">
+          <modelElement href="Tesi_HotspotNY.uml#_I5WykTE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_SdjFzzE9EemOvvAcGBmHtg" name="compconn">
+        <modelElement href="Tesi_HotspotNY.uml#_I6_xUjE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SdjF0DE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SdjF0TE9EemOvvAcGBmHtg" name="Set">
+          <modelElement href="Tesi_HotspotNY.uml#_I5WLgTE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_SWHn8DE9EemOvvAcGBmHtg" name="TSP" associationsOut="_SUvu8DE9EemOvvAcGBmHtg _SVkOUDE9EemOvvAcGBmHtg" generalizations="_SW8uYDE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_IxyK8DE9EemOvvAcGBmHtg"/>
+    <visualProperties xmi:id="_SWHn8TE9EemOvvAcGBmHtg" position="1910.0,1583.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_SWHn8jE9EemOvvAcGBmHtg" label="+"/>
+    <attributes xmi:id="_SWHn8zE9EemOvvAcGBmHtg" name="best">
+      <modelElement href="Tesi_HotspotNY.uml#_I71e0TE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SWHn9DE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I72F4TE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SWHn9TE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SWHn9jE9EemOvvAcGBmHtg" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_SWHn9zE9EemOvvAcGBmHtg" name="Hotspot">
+        <modelElement href="Tesi_HotspotNY.uml#_IyTvYDE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SWHn-DE9EemOvvAcGBmHtg" name="bestWeight">
+      <modelElement href="Tesi_HotspotNY.uml#_I72s8DE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SWHn-TE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I72s8TE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SWHn-jE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SWHn-zE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SWHn_DE9EemOvvAcGBmHtg" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SWHn_TE9EemOvvAcGBmHtg" name="compconn">
+      <modelElement href="Tesi_HotspotNY.uml#_I74iIjE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SWHn_jE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I75JMTE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SWHn_zE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SWHoADE9EemOvvAcGBmHtg" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_SWHoATE9EemOvvAcGBmHtg" name="Hotspot">
+        <modelElement href="Tesi_HotspotNY.uml#_IyTvYDE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SWHoAjE9EemOvvAcGBmHtg" name="start_time">
+      <modelElement href="Tesi_HotspotNY.uml#_I75JMjE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SWHoAzE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I75wQDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SWHoBDE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SWHoBTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SWHoBjE9EemOvvAcGBmHtg" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SWHoBzE9EemOvvAcGBmHtg" name="end_time">
+      <modelElement href="Tesi_HotspotNY.uml#_I75wQTE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SWHoCDE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I76XUDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SWHoCTE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SWHoCjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SWHoCzE9EemOvvAcGBmHtg" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SWHoDDE9EemOvvAcGBmHtg" name="isLate">
+      <modelElement href="Tesi_HotspotNY.uml#_I76XUTE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SWHoDTE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I76-YDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SWHoDjE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SWHoDzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SWHoEDE9EemOvvAcGBmHtg" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_SWHoETE9EemOvvAcGBmHtg" name="solve">
+      <modelElement href="Tesi_HotspotNY.uml#_Ix0nMDE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SWHoEjE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_Ix1OQDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SWHoEzE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_Ix11UDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SWHoFDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SWHoFTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_SWHoFjE9EemOvvAcGBmHtg" name="getSolution">
+      <modelElement href="Tesi_HotspotNY.uml#_Ix3DcDE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SWHoFzE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_Ix3qgDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SWHoGDE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_Ix4RkDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SWHoGTE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SWHoGjE9EemOvvAcGBmHtg" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_SWHoGzE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_Ix3DcTE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SWHoHDE9EemOvvAcGBmHtg" name="Hotspot">
+          <modelElement href="Tesi_HotspotNY.uml#_IyTvYDE9EemOvvAcGBmHtg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_SWHoHTE9EemOvvAcGBmHtg" name="isLate">
+      <modelElement href="Tesi_HotspotNY.uml#_Ix44oDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SWHoHjE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SWHoHzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SWHoIDE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_Ix44oTE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SWHoITE9EemOvvAcGBmHtg" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_SWHoIjE9EemOvvAcGBmHtg" name="TSP">
+      <modelElement href="Tesi_HotspotNY.uml#_I62nYDE9EemOvvAcGBmHtg"/>
+      <keywords xmi:id="_SWHoIzE9EemOvvAcGBmHtg" keyword="create"/>
+      <visibility xmi:id="_SWHoJDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SWHoJTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SWHoJjE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_I63OcjE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SWHoJzE9EemOvvAcGBmHtg" name="TSP">
+          <modelElement href="Tesi_HotspotNY.uml#_IxyK8DE9EemOvvAcGBmHtg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_SWHoKDE9EemOvvAcGBmHtg" name="graph">
+        <modelElement href="Tesi_HotspotNY.uml#_I62nYTE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SWHoKTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SWHoKjE9EemOvvAcGBmHtg" name="Graph">
+          <modelElement href="Tesi_HotspotNY.uml#_I5WykTE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_SWHoKzE9EemOvvAcGBmHtg" name="compconn">
+        <modelElement href="Tesi_HotspotNY.uml#_I62nYjE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SWHoLDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SWHoLTE9EemOvvAcGBmHtg" name="Set">
+          <modelElement href="Tesi_HotspotNY.uml#_I5WLgTE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SWHoLjE9EemOvvAcGBmHtg" comments="_SWCIYDE9EemOvvAcGBmHtg" targetConnectionVisual="_SWCvcDE9EemOvvAcGBmHtg" name="explore">
+      <modelElement href="Tesi_HotspotNY.uml#_I65DoDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SWHoLzE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SWHoMDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SWHoMTE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_I65qsDE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SWHoMjE9EemOvvAcGBmHtg" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_SWHoMzE9EemOvvAcGBmHtg" name="parziale">
+        <modelElement href="Tesi_HotspotNY.uml#_I65DoTE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SWHoNDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SWHoNTE9EemOvvAcGBmHtg" name="List">
+          <modelElement href="Tesi_HotspotNY.uml#_I4zY8TE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_SWHoNjE9EemOvvAcGBmHtg" name="step">
+        <modelElement href="Tesi_HotspotNY.uml#_I65DojE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SWHoNzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SWHoODE9EemOvvAcGBmHtg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SWHoOTE9EemOvvAcGBmHtg" comments="_SWDWgDE9EemOvvAcGBmHtg" targetConnectionVisual="_SWDWgTE9EemOvvAcGBmHtg" name="weightOf">
+      <modelElement href="Tesi_HotspotNY.uml#_I6640DE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SWHoOjE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SWHoOzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SWHoPDE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_I6640jE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SWHoPTE9EemOvvAcGBmHtg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_SWHoPjE9EemOvvAcGBmHtg" name="parziale">
+        <modelElement href="Tesi_HotspotNY.uml#_I6640TE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SWHoPzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SWHoQDE9EemOvvAcGBmHtg" name="List">
+          <modelElement href="Tesi_HotspotNY.uml#_I4zY8TE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_SuEN4DE9EemOvvAcGBmHtg" name="TableViewController" associationsOut="_Srn94DE9EemOvvAcGBmHtg _SsSsRDE9EemOvvAcGBmHtg _StF9gDE9EemOvvAcGBmHtg _StHysDE9EemOvvAcGBmHtg _Stm64DE9EemOvvAcGBmHtg _Stm64TE9EemOvvAcGBmHtg _St7D8DE9EemOvvAcGBmHtg _St85IDE9EemOvvAcGBmHtg _St-HQDE9EemOvvAcGBmHtg _St_VYDE9EemOvvAcGBmHtg _SuAjgDE9EemOvvAcGBmHtg _SuBxoDE9EemOvvAcGBmHtg _SuDm0DE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_IwdVQDE9EemOvvAcGBmHtg"/>
+    <visualProperties xmi:id="_SuEN4TE9EemOvvAcGBmHtg" position="2058.0,825.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_SuEN4jE9EemOvvAcGBmHtg" label="+"/>
+    <attributes xmi:id="_SuEN4zE9EemOvvAcGBmHtg" name="model">
+      <modelElement href="Tesi_HotspotNY.uml#_I7Yy4DE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SuEN5DE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7Yy4TE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SuEN5TE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SuEN5jE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SuEN5zE9EemOvvAcGBmHtg" name="Model">
+        <modelElement href="Tesi_HotspotNY.uml#_IxWtIDE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SuEN6DE9EemOvvAcGBmHtg" name="resources">
+      <modelElement href="Tesi_HotspotNY.uml#_I7Yy4jE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SuEN6TE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7aBADE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SuEN6jE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_I7aBATE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SuEN6zE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SuEN7DE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SuEN7TE9EemOvvAcGBmHtg" name="ResourceBundle">
+        <modelElement href="Tesi_HotspotNY.uml#_I4WF8DE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SuEN7jE9EemOvvAcGBmHtg" name="location">
+      <modelElement href="Tesi_HotspotNY.uml#_I7aBAzE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SuEN7zE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7aoEDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SuEN8DE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_I7aoETE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SuEN8TE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SuEN8jE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SuEN8zE9EemOvvAcGBmHtg" name="URL">
+        <modelElement href="Tesi_HotspotNY.uml#_I4UQwDE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SuEN9DE9EemOvvAcGBmHtg" name="tableView">
+      <modelElement href="Tesi_HotspotNY.uml#_I7aoEzE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SuEN9TE9EemOvvAcGBmHtg" name="Generics">
+        <modelElement href="Tesi_HotspotNY.uml#_I7bPIDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SuEN9jE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7b2MDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SuEN9zE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_I7cdQDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SuEN-DE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SuEN-TE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SuEN-jE9EemOvvAcGBmHtg" name="TableView">
+        <modelElement href="Tesi_HotspotNY.uml#_I44RcDE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SuEN-zE9EemOvvAcGBmHtg" name="numareaColumn">
+      <modelElement href="Tesi_HotspotNY.uml#_I7cdQjE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SuEN_DE9EemOvvAcGBmHtg" name="Generics">
+        <modelElement href="Tesi_HotspotNY.uml#_I7dEUDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SuEN_TE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7drYDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SuEN_jE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_I7eScDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SuEN_zE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SuEOADE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SuEOATE9EemOvvAcGBmHtg" name="TableColumn">
+        <modelElement href="Tesi_HotspotNY.uml#_I43DUDE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SuEOAjE9EemOvvAcGBmHtg" name="locationColumn">
+      <modelElement href="Tesi_HotspotNY.uml#_I7eScjE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SuEOAzE9EemOvvAcGBmHtg" name="Generics">
+        <modelElement href="Tesi_HotspotNY.uml#_I7e5gDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SuEOBDE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7fgkDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SuEOBTE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_I7fgkTE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SuEOBjE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SuEOBzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SuEOCDE9EemOvvAcGBmHtg" name="TableColumn">
+        <modelElement href="Tesi_HotspotNY.uml#_I43DUDE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SuEOCTE9EemOvvAcGBmHtg" name="streetColumn">
+      <modelElement href="Tesi_HotspotNY.uml#_I7gHoDE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SuEOCjE9EemOvvAcGBmHtg" name="Generics">
+        <modelElement href="Tesi_HotspotNY.uml#_I7gusDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SuEOCzE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7hVwDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SuEODDE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_I7hVwTE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SuEODTE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SuEODjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SuEODzE9EemOvvAcGBmHtg" name="TableColumn">
+        <modelElement href="Tesi_HotspotNY.uml#_I43DUDE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SuEOEDE9EemOvvAcGBmHtg" name="cityColumn">
+      <modelElement href="Tesi_HotspotNY.uml#_I7hVwzE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SuEOETE9EemOvvAcGBmHtg" name="Generics">
+        <modelElement href="Tesi_HotspotNY.uml#_I7ij4DE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SuEOEjE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7ij4TE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SuEOEzE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_I7jK8DE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SuEOFDE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SuEOFTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SuEOFjE9EemOvvAcGBmHtg" name="TableColumn">
+        <modelElement href="Tesi_HotspotNY.uml#_I43DUDE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SuEOFzE9EemOvvAcGBmHtg" name="SSIDColumn">
+      <modelElement href="Tesi_HotspotNY.uml#_I7jK8jE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SuEOGDE9EemOvvAcGBmHtg" name="Generics">
+        <modelElement href="Tesi_HotspotNY.uml#_I7jyADE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SuEOGTE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7kZEDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SuEOGjE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_I7kZETE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SuEOGzE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SuEOHDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SuEOHTE9EemOvvAcGBmHtg" name="TableColumn">
+        <modelElement href="Tesi_HotspotNY.uml#_I43DUDE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SuEOHjE9EemOvvAcGBmHtg" name="infoColumn">
+      <modelElement href="Tesi_HotspotNY.uml#_I7lAIDE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SuEOHzE9EemOvvAcGBmHtg" name="Generics">
+        <modelElement href="Tesi_HotspotNY.uml#_I7lnMDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SuEOIDE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7mOQDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SuEOITE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_I7mOQTE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SuEOIjE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SuEOIzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SuEOJDE9EemOvvAcGBmHtg" name="TableColumn">
+        <modelElement href="Tesi_HotspotNY.uml#_I43DUDE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SuEOJTE9EemOvvAcGBmHtg" name="backButton">
+      <modelElement href="Tesi_HotspotNY.uml#_I7mOQzE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SuEOJjE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7m1UDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SuEOJzE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_I7ncYDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SuEOKDE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SuEOKTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SuEOKjE9EemOvvAcGBmHtg" name="Button">
+        <modelElement href="Tesi_HotspotNY.uml#_I4dasTE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SuEOKzE9EemOvvAcGBmHtg" name="labelinfo">
+      <modelElement href="Tesi_HotspotNY.uml#_I7ncYjE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SuEOLDE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7ncYzE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SuEOLTE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_I7oDcDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SuEOLjE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SuEOLzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SuEOMDE9EemOvvAcGBmHtg" name="Label">
+        <modelElement href="Tesi_HotspotNY.uml#_I4hsIDE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SuEOMTE9EemOvvAcGBmHtg" name="labelinfo2">
+      <modelElement href="Tesi_HotspotNY.uml#_I7oDcjE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SuEOMjE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7pRkDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SuEOMzE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_I7pRkTE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SuEONDE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SuEONTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SuEONjE9EemOvvAcGBmHtg" name="Label">
+        <modelElement href="Tesi_HotspotNY.uml#_I4hsIDE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_SuEONzE9EemOvvAcGBmHtg" name="doSchedule">
+      <modelElement href="Tesi_HotspotNY.uml#_Iwi00DE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SuEOODE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SuEOOTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_SuEOOjE9EemOvvAcGBmHtg" name="approximate">
+        <modelElement href="Tesi_HotspotNY.uml#_Iwi00TE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SuEOOzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SuEOPDE9EemOvvAcGBmHtg" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SuEOPTE9EemOvvAcGBmHtg" name="initialize">
+      <modelElement href="Tesi_HotspotNY.uml#_Iwjb4DE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SuEOPjE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_IwkC8DE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SuEOPzE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_IwlREDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SuEOQDE9EemOvvAcGBmHtg" label="~"/>
+      <cardinality xmi:id="_SuEOQTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_SuEOQjE9EemOvvAcGBmHtg" name="setModel">
+      <modelElement href="Tesi_HotspotNY.uml#_I4770DE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SuEOQzE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SuEORDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_SuEORTE9EemOvvAcGBmHtg" name="model">
+        <modelElement href="Tesi_HotspotNY.uml#_I4770TE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SuEORjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SuEORzE9EemOvvAcGBmHtg" name="Model">
+          <modelElement href="Tesi_HotspotNY.uml#_IxWtIDE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_SuEOSDE9EemOvvAcGBmHtg" name="approximate">
+        <modelElement href="Tesi_HotspotNY.uml#_I4770jE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SuEOSTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SuEOSjE9EemOvvAcGBmHtg" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SuEOSzE9EemOvvAcGBmHtg" name="goBackScene">
+      <modelElement href="Tesi_HotspotNY.uml#_I6ieUDE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SuEOTDE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I6jFYTE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SuEOTTE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_I6jscDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SuEOTjE9EemOvvAcGBmHtg" label="~"/>
+      <cardinality xmi:id="_SuEOTzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_SuEOUDE9EemOvvAcGBmHtg" name="event">
+        <modelElement href="Tesi_HotspotNY.uml#_I6jFYDE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SuEOUTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SuEOUjE9EemOvvAcGBmHtg" name="ActionEvent">
+          <modelElement href="Tesi_HotspotNY.uml#_I4XUETE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_SI5rUDE9EemOvvAcGBmHtg" name="Borough" associationsIn="_SKwsgDE9EemOvvAcGBmHtg" associationsOut="_SeuxYDE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_IxEZQDE9EemOvvAcGBmHtg"/>
+    <visualProperties xmi:id="_SI5rUTE9EemOvvAcGBmHtg" position="2737.0,1019.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_SI5rUjE9EemOvvAcGBmHtg" label="+"/>
+    <attributes xmi:id="_SI5rUzE9EemOvvAcGBmHtg" name="sigla">
+      <modelElement href="Tesi_HotspotNY.uml#_I7rt0DE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SI5rVDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SI5rVTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SI5rVjE9EemOvvAcGBmHtg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SI5rVzE9EemOvvAcGBmHtg" name="name">
+      <modelElement href="Tesi_HotspotNY.uml#_I7rt0TE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SI5rWDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SI5rWTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SI5rWjE9EemOvvAcGBmHtg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SI5rWzE9EemOvvAcGBmHtg" name="code">
+      <modelElement href="Tesi_HotspotNY.uml#_I7sU4DE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SI5rXDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SI5rXTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SI5rXjE9EemOvvAcGBmHtg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_SI5rXzE9EemOvvAcGBmHtg" name="Borough">
+      <modelElement href="Tesi_HotspotNY.uml#_IxGOcDE9EemOvvAcGBmHtg"/>
+      <keywords xmi:id="_SI5rYDE9EemOvvAcGBmHtg" keyword="create"/>
+      <visibility xmi:id="_SI5rYTE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SI5rYjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SI5rYzE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_IxHckjE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SI5rZDE9EemOvvAcGBmHtg" name="Borough">
+          <modelElement href="Tesi_HotspotNY.uml#_IxEZQDE9EemOvvAcGBmHtg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_SI5rZTE9EemOvvAcGBmHtg" name="sigla">
+        <modelElement href="Tesi_HotspotNY.uml#_IxG1gDE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SI5rZjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SI5rZzE9EemOvvAcGBmHtg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_SI5raDE9EemOvvAcGBmHtg" name="name">
+        <modelElement href="Tesi_HotspotNY.uml#_IxG1gTE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SI5raTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SI5rajE9EemOvvAcGBmHtg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_SI5razE9EemOvvAcGBmHtg" name="code">
+        <modelElement href="Tesi_HotspotNY.uml#_IxG1gjE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SI5rbDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SI5rbTE9EemOvvAcGBmHtg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SI5rbjE9EemOvvAcGBmHtg" name="toString">
+      <modelElement href="Tesi_HotspotNY.uml#_IxIDoDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SI5rbzE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SI5rcDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SI5rcTE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_IxIDoTE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SI5rcjE9EemOvvAcGBmHtg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Sgd2wDE9EemOvvAcGBmHtg" name="Hotspot" associationsIn="_SeuxYDE9EemOvvAcGBmHtg _SQF4cDE9EemOvvAcGBmHtg _SUvu8DE9EemOvvAcGBmHtg _SVkOUDE9EemOvvAcGBmHtg _SYF94TE9EemOvvAcGBmHtg _ScmqcDE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_IyTvYDE9EemOvvAcGBmHtg"/>
+    <visualProperties xmi:id="_Sgd2wTE9EemOvvAcGBmHtg" position="948.0,1003.0" size="1030.0,392.0"/>
+    <visibility xmi:id="_Sgd2wjE9EemOvvAcGBmHtg" label="+"/>
+    <attributes xmi:id="_Sgd2wzE9EemOvvAcGBmHtg" name="id">
+      <modelElement href="Tesi_HotspotNY.uml#_I7_24DE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_Sgd2xDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_Sgd2xTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_Sgd2xjE9EemOvvAcGBmHtg" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Sgd2xzE9EemOvvAcGBmHtg" name="borough">
+      <modelElement href="Tesi_HotspotNY.uml#_I8Ad8DE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_Sgd2yDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_Sgd2yTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_Sgd2yjE9EemOvvAcGBmHtg" name="Borough">
+        <modelElement href="Tesi_HotspotNY.uml#_IxEZQDE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Sgd2yzE9EemOvvAcGBmHtg" name="type">
+      <modelElement href="Tesi_HotspotNY.uml#_I8Ad8TE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_Sgd2zDE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_Sgd2zTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_Sgd2zjE9EemOvvAcGBmHtg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Sgd2zzE9EemOvvAcGBmHtg" name="provider">
+      <modelElement href="Tesi_HotspotNY.uml#_I8BFADE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_Sgd20DE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_Sgd20TE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_Sgd20jE9EemOvvAcGBmHtg" name="Provider">
+        <modelElement href="Tesi_HotspotNY.uml#_IxpBADE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Sgd20zE9EemOvvAcGBmHtg" name="location">
+      <modelElement href="Tesi_HotspotNY.uml#_I8BsEDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_Sgd21DE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_Sgd21TE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_Sgd21jE9EemOvvAcGBmHtg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Sgd21zE9EemOvvAcGBmHtg" name="street">
+      <modelElement href="Tesi_HotspotNY.uml#_I8CTIDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_Sgd22DE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_Sgd22TE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_Sgd22jE9EemOvvAcGBmHtg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Sgd22zE9EemOvvAcGBmHtg" name="latitude">
+      <modelElement href="Tesi_HotspotNY.uml#_I8CTITE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_Sgd23DE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_Sgd23TE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_Sgd23jE9EemOvvAcGBmHtg" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Sgd23zE9EemOvvAcGBmHtg" name="longitude">
+      <modelElement href="Tesi_HotspotNY.uml#_I8CTIjE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_Sgd24DE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_Sgd24TE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_Sgd24jE9EemOvvAcGBmHtg" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Sgd24zE9EemOvvAcGBmHtg" name="city">
+      <modelElement href="Tesi_HotspotNY.uml#_I8C6MDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_Sgd25DE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_Sgd25TE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_Sgd25jE9EemOvvAcGBmHtg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Sgd25zE9EemOvvAcGBmHtg" name="remark">
+      <modelElement href="Tesi_HotspotNY.uml#_I8C6MTE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_Sgd26DE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_Sgd26TE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_Sgd26jE9EemOvvAcGBmHtg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Sgd26zE9EemOvvAcGBmHtg" name="SSID">
+      <modelElement href="Tesi_HotspotNY.uml#_I8DhQDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_Sgd27DE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_Sgd27TE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_Sgd27jE9EemOvvAcGBmHtg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Sgd27zE9EemOvvAcGBmHtg" name="Hotspot">
+      <modelElement href="Tesi_HotspotNY.uml#_IyYA0DE9EemOvvAcGBmHtg"/>
+      <keywords xmi:id="_Sgd28DE9EemOvvAcGBmHtg" keyword="create"/>
+      <stereotypes xmi:id="_Sgd28TE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_IyZO8DE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_Sgd28jE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_Sgd28zE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Sgd29DE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_IyZO8TE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_Sgd29TE9EemOvvAcGBmHtg" name="Hotspot">
+          <modelElement href="Tesi_HotspotNY.uml#_IyTvYDE9EemOvvAcGBmHtg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Sgd29jE9EemOvvAcGBmHtg" name="hashCode">
+      <modelElement href="Tesi_HotspotNY.uml#_IyZO8jE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_Sgd29zE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_IyadEDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Sgd2-DE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_IybEIDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_Sgd2-TE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_Sgd2-jE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Sgd2-zE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_IyZ2ADE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_Sgd2_DE9EemOvvAcGBmHtg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Sgd2_TE9EemOvvAcGBmHtg" name="print">
+      <modelElement href="Tesi_HotspotNY.uml#_IybrMDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_Sgd2_jE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_Sgd2_zE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Sgd3ADE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_IycSQDE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_Sgd3ATE9EemOvvAcGBmHtg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Sgd3AjE9EemOvvAcGBmHtg" name="toString">
+      <modelElement href="Tesi_HotspotNY.uml#_IycSQTE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_Sgd3AzE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_Iyc5UTE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Sgd3BDE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_IydgYDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_Sgd3BTE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_Sgd3BjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Sgd3BzE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_Iyc5UDE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_Sgd3CDE9EemOvvAcGBmHtg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Sgd3CTE9EemOvvAcGBmHtg" name="Hotspot">
+      <modelElement href="Tesi_HotspotNY.uml#_I52h0DE9EemOvvAcGBmHtg"/>
+      <keywords xmi:id="_Sgd3CjE9EemOvvAcGBmHtg" keyword="create"/>
+      <visibility xmi:id="_Sgd3CzE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_Sgd3DDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Sgd3DTE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_I54XATE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_Sgd3DjE9EemOvvAcGBmHtg" name="Hotspot">
+          <modelElement href="Tesi_HotspotNY.uml#_IyTvYDE9EemOvvAcGBmHtg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Sgd3DzE9EemOvvAcGBmHtg" name="id">
+        <modelElement href="Tesi_HotspotNY.uml#_I53I4DE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_Sgd3EDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_Sgd3ETE9EemOvvAcGBmHtg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Sgd3EjE9EemOvvAcGBmHtg" name="borough">
+        <modelElement href="Tesi_HotspotNY.uml#_I53I4TE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_Sgd3EzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_Sgd3FDE9EemOvvAcGBmHtg" name="Borough">
+          <modelElement href="Tesi_HotspotNY.uml#_IxEZQDE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Sgd3FTE9EemOvvAcGBmHtg" name="type">
+        <modelElement href="Tesi_HotspotNY.uml#_I53I4jE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_Sgd3FjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_Sgd3FzE9EemOvvAcGBmHtg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Sgd3GDE9EemOvvAcGBmHtg" name="provider">
+        <modelElement href="Tesi_HotspotNY.uml#_I53I4zE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_Sgd3GTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_Sgd3GjE9EemOvvAcGBmHtg" name="Provider">
+          <modelElement href="Tesi_HotspotNY.uml#_IxpBADE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Sgd3GzE9EemOvvAcGBmHtg" name="location">
+        <modelElement href="Tesi_HotspotNY.uml#_I53I5DE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_Sgd3HDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_Sgd3HTE9EemOvvAcGBmHtg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Sgd3HjE9EemOvvAcGBmHtg" name="street">
+        <modelElement href="Tesi_HotspotNY.uml#_I53I5TE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_Sgd3HzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_Sgd3IDE9EemOvvAcGBmHtg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Sgd3ITE9EemOvvAcGBmHtg" name="latitude">
+        <modelElement href="Tesi_HotspotNY.uml#_I53v8DE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_Sgd3IjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_Sgd3IzE9EemOvvAcGBmHtg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Sgd3JDE9EemOvvAcGBmHtg" name="longitude">
+        <modelElement href="Tesi_HotspotNY.uml#_I53v8TE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_Sgd3JTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_Sgd3JjE9EemOvvAcGBmHtg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Sgd3JzE9EemOvvAcGBmHtg" name="city">
+        <modelElement href="Tesi_HotspotNY.uml#_I53v8jE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_Sgd3KDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_Sgd3KTE9EemOvvAcGBmHtg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Sgd3KjE9EemOvvAcGBmHtg" name="remark">
+        <modelElement href="Tesi_HotspotNY.uml#_I53v8zE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_Sgd3KzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_Sgd3LDE9EemOvvAcGBmHtg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Sgd3LTE9EemOvvAcGBmHtg" name="sSID">
+        <modelElement href="Tesi_HotspotNY.uml#_I53v9DE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_Sgd3LjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_Sgd3LzE9EemOvvAcGBmHtg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Sgd3MDE9EemOvvAcGBmHtg" name="equals">
+      <modelElement href="Tesi_HotspotNY.uml#_I7DbsDE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_Sgd3MTE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7ECwTE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Sgd3MjE9EemOvvAcGBmHtg" name="Annotations">
+        <modelElement href="Tesi_HotspotNY.uml#_I7Ep0DE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_Sgd3MzE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_Sgd3NDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Sgd3NTE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_I7ECwDE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_Sgd3NjE9EemOvvAcGBmHtg" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Sgd3NzE9EemOvvAcGBmHtg" name="obj">
+        <modelElement href="Tesi_HotspotNY.uml#_I7DbsTE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_Sgd3ODE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_Sgd3OTE9EemOvvAcGBmHtg" name="Object">
+          <modelElement href="Tesi_HotspotNY.uml#_I6n94DE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_SPNusDE9EemOvvAcGBmHtg" name="Model" associationsIn="_Sk98QDE9EemOvvAcGBmHtg _Srn94DE9EemOvvAcGBmHtg" associationsOut="_SN11sDE9EemOvvAcGBmHtg _SPMgkDE9EemOvvAcGBmHtg _SPNHoDE9EemOvvAcGBmHtg">
+    <modelElement href="Tesi_HotspotNY.uml#_IxWtIDE9EemOvvAcGBmHtg"/>
+    <visualProperties xmi:id="_SPNusTE9EemOvvAcGBmHtg" position="1840.0,440.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_SPNusjE9EemOvvAcGBmHtg" label="+"/>
+    <attributes xmi:id="_SPNuszE9EemOvvAcGBmHtg" name="dao">
+      <modelElement href="Tesi_HotspotNY.uml#_I7v_QDE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SPNutDE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7wmUDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SPNutTE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SPNutjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SPNutzE9EemOvvAcGBmHtg" name="HotspotDAO">
+        <modelElement href="Tesi_HotspotNY.uml#_Iw4MADE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SPNuuDE9EemOvvAcGBmHtg" name="graph">
+      <modelElement href="Tesi_HotspotNY.uml#_I7wmUTE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SPNuuTE9EemOvvAcGBmHtg" name="Generics">
+        <modelElement href="Tesi_HotspotNY.uml#_I7x0cDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SPNuujE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7x0cTE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SPNuuzE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SPNuvDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SPNuvTE9EemOvvAcGBmHtg" name="Graph">
+        <modelElement href="Tesi_HotspotNY.uml#_I5WykTE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SPNuvjE9EemOvvAcGBmHtg" name="bmap">
+      <modelElement href="Tesi_HotspotNY.uml#_I7x0cjE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SPNuvzE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7ybgDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SPNuwDE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SPNuwTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SPNuwjE9EemOvvAcGBmHtg" name="BoroughIdMap">
+        <modelElement href="Tesi_HotspotNY.uml#_IxJ40DE9EemOvvAcGBmHtg"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SPNuwzE9EemOvvAcGBmHtg" name="totdistance">
+      <modelElement href="Tesi_HotspotNY.uml#_I7ybgTE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SPNuxDE9EemOvvAcGBmHtg" name="LegacyStyledElement">
+        <modelElement href="Tesi_HotspotNY.uml#_I7zCkDE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SPNuxTE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SPNuxjE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <type xmi:id="_SPNuxzE9EemOvvAcGBmHtg" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_SPNuyDE9EemOvvAcGBmHtg" name="Model">
+      <modelElement href="Tesi_HotspotNY.uml#_IxYiUDE9EemOvvAcGBmHtg"/>
+      <keywords xmi:id="_SPNuyTE9EemOvvAcGBmHtg" keyword="create"/>
+      <visibility xmi:id="_SPNuyjE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SPNuyzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SPNuzDE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_IxZJYjE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SPNuzTE9EemOvvAcGBmHtg" name="Model">
+          <modelElement href="Tesi_HotspotNY.uml#_IxWtIDE9EemOvvAcGBmHtg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_SPNuzjE9EemOvvAcGBmHtg" name="getAllProviders">
+      <modelElement href="Tesi_HotspotNY.uml#_IxZJYzE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SPNuzzE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SPNu0DE9EemOvvAcGBmHtg" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_SPNu0TE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_IxZJZDE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SPNu0jE9EemOvvAcGBmHtg" name="Provider">
+          <modelElement href="Tesi_HotspotNY.uml#_IxpBADE9EemOvvAcGBmHtg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_SPNu0zE9EemOvvAcGBmHtg" name="getAllBoroughs">
+      <modelElement href="Tesi_HotspotNY.uml#_IxaXgDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SPNu1DE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SPNu1TE9EemOvvAcGBmHtg" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_SPNu1jE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_IxaXgTE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SPNu1zE9EemOvvAcGBmHtg" name="Borough">
+          <modelElement href="Tesi_HotspotNY.uml#_IxEZQDE9EemOvvAcGBmHtg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_SPNu2DE9EemOvvAcGBmHtg" comments="_SOtYYDE9EemOvvAcGBmHtg" targetConnectionVisual="_SPBhcDE9EemOvvAcGBmHtg" name="getCC">
+      <modelElement href="Tesi_HotspotNY.uml#_IxbloDE9EemOvvAcGBmHtg"/>
+      <stereotypes xmi:id="_SPNu2TE9EemOvvAcGBmHtg" name="Generics">
+        <modelElement href="Tesi_HotspotNY.uml#_IxfQADE9EemOvvAcGBmHtg"/>
+      </stereotypes>
+      <visibility xmi:id="_SPNu2jE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SPNu2zE9EemOvvAcGBmHtg" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_SPNu3DE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_IxcMsDE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SPNu3TE9EemOvvAcGBmHtg" name="Set">
+          <modelElement href="Tesi_HotspotNY.uml#_I5WLgTE9EemOvvAcGBmHtg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_SPNu3jE9EemOvvAcGBmHtg" comments="_SPCvkDE9EemOvvAcGBmHtg" targetConnectionVisual="_SPDWoDE9EemOvvAcGBmHtg" name="schedule">
+      <modelElement href="Tesi_HotspotNY.uml#_IxgeIDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SPNu3zE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SPNu4DE9EemOvvAcGBmHtg" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_SPNu4TE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_IxhFMTE9EemOvvAcGBmHtg"/>
+      </outParameters>
+      <parameters xmi:id="_SPNu4zE9EemOvvAcGBmHtg" name="approximate">
+        <modelElement href="Tesi_HotspotNY.uml#_IxhFMDE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SPNu5DE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SPNu5TE9EemOvvAcGBmHtg" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SPNu5jE9EemOvvAcGBmHtg" comments="_SPD9sDE9EemOvvAcGBmHtg" targetConnectionVisual="_SPD9sTE9EemOvvAcGBmHtg" name="createGraph">
+      <modelElement href="Tesi_HotspotNY.uml#_I5fVcDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SPNu5zE9EemOvvAcGBmHtg" label="+"/>
+      <cardinality xmi:id="_SPNu6DE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_SPNu6TE9EemOvvAcGBmHtg" name="provider">
+        <modelElement href="Tesi_HotspotNY.uml#_I5fVcTE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SPNu6jE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SPNu6zE9EemOvvAcGBmHtg" name="Provider">
+          <modelElement href="Tesi_HotspotNY.uml#_IxpBADE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_SPNu7DE9EemOvvAcGBmHtg" name="borough">
+        <modelElement href="Tesi_HotspotNY.uml#_I5f8gDE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SPNu7TE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SPNu7jE9EemOvvAcGBmHtg" name="Borough">
+          <modelElement href="Tesi_HotspotNY.uml#_IxEZQDE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_SPNu7zE9EemOvvAcGBmHtg" name="maxDist">
+        <modelElement href="Tesi_HotspotNY.uml#_I5f8gTE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SPNu8DE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SPNu8TE9EemOvvAcGBmHtg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_SPNu8jE9EemOvvAcGBmHtg" name="failure">
+        <modelElement href="Tesi_HotspotNY.uml#_I5f8gjE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SPNu8zE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SPNu9DE9EemOvvAcGBmHtg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_SPNu9TE9EemOvvAcGBmHtg" name="allIsSelected">
+        <modelElement href="Tesi_HotspotNY.uml#_I5f8gzE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SPNu9jE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SPNu9zE9EemOvvAcGBmHtg" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SPNu-DE9EemOvvAcGBmHtg" comments="_SPEkwDE9EemOvvAcGBmHtg" targetConnectionVisual="_SPEkwTE9EemOvvAcGBmHtg" name="calculateDistance">
+      <modelElement href="Tesi_HotspotNY.uml#_I5gjkDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SPNu-TE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SPNu-jE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SPNu-zE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_I5hKoDE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SPNu_DE9EemOvvAcGBmHtg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_SPNu_TE9EemOvvAcGBmHtg" name="h1">
+        <modelElement href="Tesi_HotspotNY.uml#_I5gjkTE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SPNu_jE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SPNu_zE9EemOvvAcGBmHtg" name="Hotspot">
+          <modelElement href="Tesi_HotspotNY.uml#_IyTvYDE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_SPNvADE9EemOvvAcGBmHtg" name="h2">
+        <modelElement href="Tesi_HotspotNY.uml#_I5gjkjE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SPNvATE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SPNvAjE9EemOvvAcGBmHtg" name="Hotspot">
+          <modelElement href="Tesi_HotspotNY.uml#_IyTvYDE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SPNvAzE9EemOvvAcGBmHtg" comments="_SPFy4DE9EemOvvAcGBmHtg" targetConnectionVisual="_SPFy4TE9EemOvvAcGBmHtg" name="badVertex">
+      <modelElement href="Tesi_HotspotNY.uml#_I6sPUDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SPNvBDE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SPNvBTE9EemOvvAcGBmHtg" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_SPNvBjE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_I6s2YTE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SPNvBzE9EemOvvAcGBmHtg" name="Hotspot">
+          <modelElement href="Tesi_HotspotNY.uml#_IyTvYDE9EemOvvAcGBmHtg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_SPNvCDE9EemOvvAcGBmHtg" name="allVertex">
+        <modelElement href="Tesi_HotspotNY.uml#_I6sPUTE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SPNvCTE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SPNvCjE9EemOvvAcGBmHtg" name="List">
+          <modelElement href="Tesi_HotspotNY.uml#_I4zY8TE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_SPNvCzE9EemOvvAcGBmHtg" name="failure">
+        <modelElement href="Tesi_HotspotNY.uml#_I6s2YDE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SPNvDDE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SPNvDTE9EemOvvAcGBmHtg" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SPNvDjE9EemOvvAcGBmHtg" comments="_SPGZ8DE9EemOvvAcGBmHtg" targetConnectionVisual="_SPGZ8TE9EemOvvAcGBmHtg" name="TSPAlg">
+      <modelElement href="Tesi_HotspotNY.uml#_I6urkDE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SPNvDzE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SPNvEDE9EemOvvAcGBmHtg" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_SPOVwDE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_I6vSoDE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SPOVwTE9EemOvvAcGBmHtg" name="Hotspot">
+          <modelElement href="Tesi_HotspotNY.uml#_IyTvYDE9EemOvvAcGBmHtg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_SPOVwjE9EemOvvAcGBmHtg" name="compconn">
+        <modelElement href="Tesi_HotspotNY.uml#_I6urkTE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SPOVwzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SPOVxDE9EemOvvAcGBmHtg" name="Set">
+          <modelElement href="Tesi_HotspotNY.uml#_I5WLgTE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SPOVxTE9EemOvvAcGBmHtg" comments="_SPHBADE9EemOvvAcGBmHtg" targetConnectionVisual="_SPHBATE9EemOvvAcGBmHtg" name="TSPApprox">
+      <modelElement href="Tesi_HotspotNY.uml#_I6wgwTE9EemOvvAcGBmHtg"/>
+      <visibility xmi:id="_SPOVxjE9EemOvvAcGBmHtg" label="-"/>
+      <cardinality xmi:id="_SPOVxzE9EemOvvAcGBmHtg" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_SPOVyDE9EemOvvAcGBmHtg">
+        <modelElement href="Tesi_HotspotNY.uml#_I6xH0DE9EemOvvAcGBmHtg"/>
+        <type xmi:id="_SPOVyTE9EemOvvAcGBmHtg" name="Hotspot">
+          <modelElement href="Tesi_HotspotNY.uml#_IyTvYDE9EemOvvAcGBmHtg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_SPOVyjE9EemOvvAcGBmHtg" name="compconn">
+        <modelElement href="Tesi_HotspotNY.uml#_I6wgwjE9EemOvvAcGBmHtg"/>
+        <cardinality xmi:id="_SPOVyzE9EemOvvAcGBmHtg" label="1" max="1" min="1"/>
+        <type xmi:id="_SPOVzDE9EemOvvAcGBmHtg" name="Set">
+          <modelElement href="Tesi_HotspotNY.uml#_I5WLgTE9EemOvvAcGBmHtg"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

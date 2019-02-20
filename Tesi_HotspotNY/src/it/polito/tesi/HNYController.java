@@ -91,7 +91,7 @@ public class HNYController {
 				if(model.getCC().size()!=0) {
 					this.changeScene(event, approximate);
 				}else {
-					labelinfo.setText("Graph has not connected components. Cannot schedule!");
+					labelinfo.setText("There aren't any hotspots with this combination. Change parameters!");
 					throw new IllegalArgumentException("Graph has not connected components. Cannot schedule!");
 				}
 				
@@ -115,6 +115,7 @@ public class HNYController {
 		Scene scene2 = new Scene(root);
 		stage.setScene(scene2);
 		stage.show();
+		stage.setResizable(true);
 		
     }
 

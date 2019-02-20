@@ -133,11 +133,11 @@ public class TSP extends TSPAlgorithms{
 	 */
 	@Override
 	public List<Hotspot> getSolution() {
-		System.out.println("+++SOLUZIONE+++");
-		for(Hotspot h: best) {
-			System.out.println("+ "+ h.toString());
-		}
-		System.out.println("\nBest weight: "+bestWeight+"\n");
+//		System.out.println("+++SOLUZIONE+++");
+//		for(Hotspot h: best) {
+//			System.out.println("+ "+ h.toString());
+//		}
+//		System.out.println("\nBest weight: "+bestWeight+"\n");
 		
 		return best;
 	}

@@ -14,4 +14,4 @@ https://github.com/TdP-prove-finali/ErrigoEugenioSimone
 4)Aprire il progetto con Eclipse e lanciare la classe Main per avviare l'applicazione.
 
 Per le funzionalità, visionare il video illustrativo dell'applicazione al link:
-https://youtu.be/0sDKVsnell4
+https://www.youtube.com/watch?v=gan-8BJPSCY
